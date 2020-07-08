@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: snow;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-login .logotipo img {
+  width: 400px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.login-socialMedia {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 10px 0;
+}
+.login-socialMedia .botones {
+  width: 350px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50em;
+  background-color: yellowgreen;
+}
+.login-socialMedia-bottom {
+  text-align: center;
+}
+
+.login-email {
+  display: flex;
+  flex-direction: column;
+}
+.login-email input {
+  width: 500px;
+  height: 20px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.5em;
+  border-radius: 3px;
+  border: 1px solid snow;
+}
+
+.login-options {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.login-options button {
+  height: 30px;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  background-color: yellowgreen;
+  border: 1px solid yellowgreen;
+}
+.login-options button a {
+  padding: 7px 17px;
+  text-decoration: none;
+  color: snow;
+}
+
+.login-restartPasword {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.login-restartPasword p {
+  margin: 40px 0;
+  font-size: 1.5em;
+}
+.login-restartPasword p a {
+  text-decoration: none;
+  color: snow;
+}
+.login-restartPasword hr {
+  width: 400px;
+}
+
+.container-signUp {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+.container-signUp button {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  width: 500px;
+  height: 62px;
+  background-color: yellowgreen;
+  border: 1px solid yellowgreen;
+}
+.container-signUp button a {
+  padding: 10px 87px;
+  text-decoration: none;
+  color: snow;
+}
