@@ -2,47 +2,45 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
   background-color: #141414;
   color: snow;
-  font-family: "Roboto", sans-serif;
 }
 
 .container-login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 97vh;
+  width: 500px;
+  margin: 12px auto 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 2px #ffd34b;
+  background-color: #141414;
 }
 .container-login .logotipo img {
-  width: 400px;
-  object-fit: cover;
-  margin: 20px 0;
+  width: 270px;
+  margin: 10px 0 0 0;
 }
 
 .login-socialMedia {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 10px 0;
+  margin: auto;
 }
 .login-socialMedia .botones {
   width: 350px;
   height: 50px;
-  margin: 10px;
+  margin: 15px auto;
   border-radius: 50em;
-  background-color: yellowgreen;
+  background-color: #ffd34b;
 }
 .login-socialMedia-bottom {
   text-align: center;
 }
-
-.login-email {
-  display: flex;
-  flex-direction: column;
+.login-socialMedia-bottom hr {
+  width: 400px;
 }
+
 .login-email input {
-  width: 500px;
+  width: 380px;
   height: 20px;
   padding: 10px;
   margin: 10px;
@@ -54,36 +52,35 @@ body {
 .login-options {
   display: flex;
   width: 500px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 5px 0;
+  margin: auto;
 }
 .login-options button {
-  height: 30px;
+  height: 35px;
   width: 160px;
   margin: 0;
   padding: 0;
   font-size: 1.2em;
-  background-color: yellowgreen;
-  border: 1px solid yellowgreen;
+  background-color: #ffd34b;
+  border: 1px solid #ffd34b;
+  border-radius: 5px;
 }
 .login-options button a {
   padding: 7px 17px;
   text-decoration: none;
-  color: snow;
+  color: #141414;
+}
+.login-options .checkbox {
+  margin-right: 40px;
 }
 
-.login-restartPasword {
-  margin: 20px 0 0 0;
-  text-align: center;
-}
 .login-restartPasword p {
-  margin: 40px 0;
-  font-size: 1.5em;
+  margin: 20px 0;
+  font-size: 1em;
 }
 .login-restartPasword p a {
-  text-decoration: none;
-  color: snow;
+  color: #ffd34b;
 }
 .login-restartPasword hr {
   width: 400px;
@@ -92,19 +89,22 @@ body {
 .container-signUp {
   text-align: center;
   font-size: 1.5em;
-  margin-bottom: 2em;
+}
+.container-signUp p {
+  margin: 0.5em;
 }
 .container-signUp button {
   padding: 0;
   margin: 0;
   font-size: 1.5em;
-  width: 500px;
-  height: 62px;
-  background-color: yellowgreen;
-  border: 1px solid yellowgreen;
+  width: 400px;
+  height: 60px;
+  background-color: #ffd34b;
+  border: 1px solid #ffd34b;
+  border-radius: 5px;
 }
 .container-signUp button a {
-  padding: 10px 87px;
+  padding: 9px 38px;
   text-decoration: none;
-  color: snow;
+  color: #141414;
 }
