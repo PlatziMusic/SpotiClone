@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #141414;
   color: snow;
 }
@@ -14,9 +14,11 @@ body {
   margin: 12px auto 10px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0px 0px 10px 2px #ffd34b;
+  -webkit-box-shadow: 0px 0px 10px 2px #ffd34b;
+          box-shadow: 0px 0px 10px 2px #ffd34b;
   background-color: #141414;
 }
+
 .container-login .logotipo img {
   width: 270px;
   margin: 10px 0 0 0;
@@ -25,6 +27,7 @@ body {
 .login-socialMedia {
   margin: auto;
 }
+
 .login-socialMedia .botones {
   width: 350px;
   height: 50px;
@@ -32,9 +35,11 @@ body {
   border-radius: 50em;
   background-color: #ffd34b;
 }
+
 .login-socialMedia-bottom {
   text-align: center;
 }
+
 .login-socialMedia-bottom hr {
   width: 400px;
 }
@@ -46,16 +51,41 @@ body {
   margin: 10px;
   font-size: 1.5em;
   border-radius: 3px;
-  border: 1px solid snow;
+  border: 1px solid #ffd34b;
+  background: #141414;
+  color: white;
+  cursor: pointer;
+}
+
+.login-email input::-webkit-input-placeholder {
+  color: white;
+}
+
+.login-email input:-ms-input-placeholder {
+  color: white;
+}
+
+.login-email input::-ms-input-placeholder {
+  color: white;
+}
+
+.login-email input::placeholder {
+  color: white;
 }
 
 .login-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 500px;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
+
 .login-options button {
   height: 35px;
   width: 160px;
@@ -64,24 +94,32 @@ body {
   font-size: 1.2em;
   background-color: #ffd34b;
   border: 1px solid #ffd34b;
-  border-radius: 5px;
+  border-radius: 50em;
 }
+
 .login-options button a {
   padding: 7px 17px;
   text-decoration: none;
   color: #141414;
 }
+
 .login-options .checkbox {
   margin-right: 40px;
+}
+
+.login-options .checkbox [type="checkbox"]:checked {
+  color: #ffd34b;
 }
 
 .login-restartPasword p {
   margin: 20px 0;
   font-size: 1em;
 }
+
 .login-restartPasword p a {
   color: #ffd34b;
 }
+
 .login-restartPasword hr {
   width: 400px;
 }
@@ -90,9 +128,11 @@ body {
   text-align: center;
   font-size: 1.5em;
 }
+
 .container-signUp p {
-  margin: 0.5em;
+  margin: .5em;
 }
+
 .container-signUp button {
   padding: 0;
   margin: 0;
@@ -101,10 +141,12 @@ body {
   height: 60px;
   background-color: #ffd34b;
   border: 1px solid #ffd34b;
-  border-radius: 5px;
+  border-radius: 50em;
 }
+
 .container-signUp button a {
   padding: 9px 38px;
   text-decoration: none;
   color: #141414;
 }
+/*# sourceMappingURL=main.css.map */
