@@ -1,0 +1,52 @@
+@import "./Vars.scss";
+
+@mixin input-plataform {
+  width: 80%;
+  padding: 5px 0;
+  background-color: $background-input;
+  outline: none;
+  border: none;
+  color: $font-white-color;
+  padding-left: 10px;
+}
+
+@mixin alignCard {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin btn {
+  padding: 10px 10px;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-family: $font-secundary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+@mixin btn-plataform {
+  @include btn;
+  width: 150px;
+  background-color: $background-plataform;
+  color: $font-white-color;
+}
+
+@mixin btn-facebook {
+  @include btn;
+  min-width: 150px;
+  max-width: 250px;
+  background-color: $background-facebook;
+  color: $font-white-color;
+}
+
+@mixin btn-google {
+  @include btn;
+  min-width: 150px;
+  max-width: 250px;
+  background-color: $background-google;
+}
