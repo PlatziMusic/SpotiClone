@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Login</title>
+    
+    <!-- Scripst Google -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name = "google-signin-client_id" content = "1059413668630-5j517qajvi10facq4jfrhbuiceimpj70.apps.googleusercontent.com">
 </head>
 <body>
 
@@ -14,7 +18,8 @@
         </div>
         
         <div class="login-socialMedia">
-            <div class="botones"></div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <a href="#" onclick="signOut();">Sign out</a>
             <div class="botones"></div>
             <div class="login-socialMedia-bottom">
                 <p>o</p>
@@ -45,5 +50,23 @@
             <button><a href="#SignUp Spotify">Suscribete a Spotify</a></button>
         </div>
     </main>
+
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log(id_token);
+        }
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+            console.log('User signed out.');
+            });
+        }
+    </script>
 </body>
 </html>
