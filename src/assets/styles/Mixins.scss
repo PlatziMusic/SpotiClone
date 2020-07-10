@@ -50,3 +50,11 @@
   max-width: 250px;
   background-color: $background-google;
 }
+
+@mixin link {
+  font-family: $font-secundary;
+  color: $font-white-color;
+  letter-spacing: 1px;
+  font-size: 12px;
+  text-transform: uppercase;
+}

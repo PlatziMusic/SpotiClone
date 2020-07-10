@@ -7,46 +7,47 @@ const Login = () => {
 
   return (
     <section className="Container">
-      <section className="firstContainer">
+      <section className="Container-login">
         <div className="logo">
           <img src={logoSpoti} alt="Logo" />
+          <h2>Empieza a escuchar musica con nosotros</h2>
         </div>
 
-        <div className="firstContainer__complement">
+        <div className="Container-login__complement">
           <button className="btn-facebook">Inicia Sesión con Facebook</button>
           <button className="btn-google">Inicia Sesión con Google</button>
         </div>
+
         <span className="division">──────────── Ó ────────────</span>
-        <form className="firstContainer__form">
+
+        <form className="Container-login__form">
           <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Correo electronico"
+            type='email'
+            name='email'
+            id='email'
+            placeholder='Correo electronico'
             // onChange={handleChangeForm}
           />
           <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Contraseña"
+            type='password'
+            name='password'
+            id='password'
+            placeholder='Contraseña'
             // onChange={handleChangeForm}
           />
-          <div className="checkbox">
-            <input type="checkbox" name="remembermePassword" id="rememberme-password" />
-            <label for="remembermePassword">Recuerdame</label>
+          <div className="options firstContainer__form">
+            <div className='checkbox'>
+              <input type='checkbox' name='remembermePassword' id='rememberme-password' />
+              <label htmlFor='remembermePassword'>Recuerdame</label>
+            </div>
+            <button type='button'>Iniciar Sesión</button>
           </div>
-          <button><Link href="/">Iniciar Sesión</Link></button>
         </form>
 
-        <div className="firstContainer-restartPasword">
-          <button><Link href="/">¿Se te ha olvidado la contraseña?</Link></button>
-          <span className="division">──────────── Ó ────────────</span>
-        </div>
-
-        <div className="firstContainer-signUp">
-          <p>¿No tienes cuenta?</p>
-          <button><Link href="/">Suscribete a Spotify</Link></button>
+        <div className='Container-login-signUp'>
+          <Link to='/login' className='firstContainer__complement-link'>¿Se te ha olvidado la contraseña?</Link>
+          <h2 className='firstContainer__complement'>¿No tienes cuenta?</h2>
+          <Link to='/register' className='firstContainer__complement-link'>Suscribete a Spotify</Link>
         </div>
       </section>
     </section>
