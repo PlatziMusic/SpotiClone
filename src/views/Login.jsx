@@ -4,67 +4,51 @@ import logoSpoti from "../assets/static/logoSpoti.png";
 import "../assets/styles/components/Login.scss";
 
 const Login = () => {
+
   return (
-    <section className="container-login">
-      <div className="logotipo">
-        <img src={logoSpoti} alt="Logo" />
-      </div>
-
-      <div className="login-socialMedia">
-        <div className="g-signin2" data-onsuccess="onSignIn"></div>
-        {/* <a href="#" onClick={signOut()}>
-          Sign out
-        </a> */}
-        <button>Sign out</button>
-        <div className="botones"></div>
-        <div className="login-socialMedia-bottom">
-          <p>o</p>
-          <hr />
+    <section className="Container">
+      <section className="firstContainer">
+        <div className="logo">
+          <img src={logoSpoti} alt="Logo" />
         </div>
-      </div>
 
-      <div className="login-email">
-        <input
-          type="email"
-          name="emailAdress"
-          id="login-email"
-          placeholder="Direccion de Correo Electronico"
-        />
-        <input
-          type="password"
-          name="passwordUser"
-          id="password-user"
-          placeholder="Contraseña"
-        />
-      </div>
-
-      <div className="login-options">
-        <div className="checkbox">
+        <div className="firstContainer__complement">
+          <button className="btn-facebook">Inicia Sesión con Facebook</button>
+          <button className="btn-google">Inicia Sesión con Google</button>
+        </div>
+        <span className="division">──────────── Ó ────────────</span>
+        <form className="firstContainer__form">
           <input
-            type="checkbox"
-            name="remembermePassword"
-            id="rememberme-password"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electronico"
+            // onChange={handleChangeForm}
           />
-          <label for="remembermePassword">Recuerdame</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
+            // onChange={handleChangeForm}
+          />
+          <div className="checkbox">
+            <input type="checkbox" name="remembermePassword" id="rememberme-password" />
+            <label for="remembermePassword">Recuerdame</label>
+          </div>
+          <button><Link href="/">Iniciar Sesión</Link></button>
+        </form>
+
+        <div className="firstContainer-restartPasword">
+          <button><Link href="/">¿Se te ha olvidado la contraseña?</Link></button>
+          <span className="division">──────────── Ó ────────────</span>
         </div>
-        <button>
-          <a href="#iniciarSesion">Iniciar Sesión</a>
-        </button>
-      </div>
 
-      <div className="login-restartPasword">
-        <p>
-          <a href="/">¿Se te ha olvidado la contraseña?</a>
-        </p>
-        <hr />
-      </div>
-
-      <div className="container-signUp">
-        <p>¿No tienes cuenta?</p>
-        <button>
-          <Link to="/register">Suscribete a Spotify</Link>
-        </button>
-      </div>
+        <div className="firstContainer-signUp">
+          <p>¿No tienes cuenta?</p>
+          <button><Link href="/">Suscribete a Spotify</Link></button>
+        </div>
+      </section>
     </section>
   );
 };

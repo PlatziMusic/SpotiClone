@@ -1,123 +1,216 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import "../Vars.scss";
+@import "../Mixins.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: "Roboto", sans-serif;
-  background-color: #141414;
-  color: snow;
-}
 
-.container-login {
-  height: 97vh;
-  width: 500px;
-  margin: 12px auto 10px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 0px 10px 2px #ffd34b;
-  background-color: #141414;
-  .logotipo img {
-    width: 270px;
-    margin: 10px 0 0 0;
+.Container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  color: $font-white-color;
+  & .firstContainer {
+    @include alignCard;
+    height: 90%;
+    background-color: $card-color;
+    grid-column: 2 / 3;
+    align-self: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
+    display: none;
   }
 }
 
-.login-socialMedia {
-  margin: auto;
-  & .botones {
-    width: 350px;
-    height: 50px;
-    margin: 15px auto;
-    border-radius: 50em;
-    background-color: #ffd34b;
-  }
-  &-bottom {
-    text-align: center;
-  }
-  &-bottom hr {
-    width: 400px;
-  }
-}
-
-.login-email {
-  & input {
-    width: 380px;
-    height: 20px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 1.5em;
-    border-radius: 3px;
-    border: 1px solid #ffd34b;
-    background: #141414;
-    color: white;
-    cursor: pointer;
-  }
-  & input::placeholder {
-    color: white;
-  }
-}
-.login-options {
-  display: flex;
-  width: 500px;
-  justify-content: space-around;
+.logo {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  & button {
-    height: 35px;
-    width: 160px;
-    margin: 0;
-    padding: 0;
-    font-size: 1.2em;
-    background-color: #ffd34b;
-    border: 1px solid #ffd34b;
-    border-radius: 50em;
+  padding: 20px;
+  & h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
   }
-  & button a {
-    padding: 7px 17px;
-    text-decoration: none;
-    color: #141414;
-  }
-  & .checkbox {
-    margin-right: 40px;
-  }
-  & .checkbox [type="checkbox"]:checked {
-    color: #ffd34b;
+  & img {
+    width: 150px;
   }
 }
 
-.login-restartPasword {
-  & p {
-    margin: 20px 0;
-    font-size: 1em;
+
+.firstContainer__form {
+  display: inherit;
+  flex-direction: column;
+  width: 100%;
+  & input {
+    @include input-plataform;
+    align-self: center;
+    margin: 5px 0;
   }
-  & p a {
-    color: #ffd34b;
-  }
-  & hr {
-    width: 400px;
+  & button {
+    @include btn-plataform;
+    margin-top: 10px;
+    align-self: center;
   }
 }
 
-.container-signUp {
-  text-align: center;
-  font-size: 1.5em;
-  & p {
-    margin: 0.5em;
-  }
-  & button {
-    padding: 0;
-    margin: 0;
-    font-size: 1.5em;
-    width: 400px;
-    height: 60px;
-    background-color: #ffd34b;
-    border: 1px solid #ffd34b;
-    border-radius: 50em;
-  }
-  & button a {
-    padding: 9px 38px;
-    text-decoration: none;
-    color: #141414;
-  }
+.division {
+  display: inline-block;
+  font-family: $font-secundary;
+  margin-top: 5px;
+  font-size: 14px;
+  color: $font-grey-color;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// body {
+//   margin: 0;
+//   padding: 0;
+//   height: 100vh;
+//   font-family: "Roboto", sans-serif;
+//   background-color: #141414;
+//   color: snow;
+// }
+
+// .container-login {
+//   height: 97vh;
+//   width: 500px;
+//   margin: 12px auto 10px;
+//   border-radius: 10px;
+//   text-align: center;
+//   box-shadow: 0px 0px 10px 2px #ffd34b;
+//   background-color: #141414;
+//   .logotipo img {
+//     width: 270px;
+//     margin: 10px 0 0 0;
+//   }
+// }
+
+// .login-socialMedia {
+//   margin: auto;
+//   & .botones {
+//     width: 350px;
+//     height: 50px;
+//     margin: 15px auto;
+//     border-radius: 50em;
+//     background-color: #ffd34b;
+//   }
+//   &-bottom {
+//     text-align: center;
+//   }
+//   &-bottom hr {
+//     width: 400px;
+//   }
+// }
+
+// .login-email {
+//   & input {
+//     width: 380px;
+//     height: 20px;
+//     padding: 10px;
+//     margin: 10px;
+//     font-size: 1.5em;
+//     border-radius: 3px;
+//     border: 1px solid #ffd34b;
+//     background: #141414;
+//     color: white;
+//     cursor: pointer;
+//   }
+//   & input::placeholder {
+//     color: white;
+//   }
+// }
+// .login-options {
+//   display: flex;
+//   width: 500px;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: auto;
+//   & button {
+//     height: 35px;
+//     width: 160px;
+//     margin: 0;
+//     padding: 0;
+//     font-size: 1.2em;
+//     background-color: #ffd34b;
+//     border: 1px solid #ffd34b;
+//     border-radius: 50em;
+//   }
+//   & button a {
+//     padding: 7px 17px;
+//     text-decoration: none;
+//     color: #141414;
+//   }
+//   & .checkbox {
+//     margin-right: 40px;
+//   }
+//   & .checkbox [type="checkbox"]:checked {
+//     color: #ffd34b;
+//   }
+// }
+
+// .login-restartPasword {
+//   & p {
+//     margin: 20px 0;
+//     font-size: 1em;
+//   }
+//   & p a {
+//     color: #ffd34b;
+//   }
+//   & hr {
+//     width: 400px;
+//   }
+// }
+
+// .container-signUp {
+//   text-align: center;
+//   font-size: 1.5em;
+//   & p {
+//     margin: 0.5em;
+//   }
+//   & button {
+//     padding: 0;
+//     margin: 0;
+//     font-size: 1.5em;
+//     width: 400px;
+//     height: 60px;
+//     background-color: #ffd34b;
+//     border: 1px solid #ffd34b;
+//     border-radius: 50em;
+//   }
+//   & button a {
+//     padding: 9px 38px;
+//     text-decoration: none;
+//     color: #141414;
+//   }
+// }
