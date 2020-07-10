@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logoSpoti from "../assets/static/logoSpoti.png";
+import logoSpoti from "../assets/static/logo.png";
 import "../assets/styles/components/Login.scss";
 
 const Login = () => {
+  const [form, setForm] = useState({
+    emailAdress: "",
+  });
+
+  const handleChangeInput = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(form);
+  };
+
   return (
     <section className="container-login">
       <div className="logotipo">
@@ -11,7 +27,7 @@ const Login = () => {
       </div>
 
       <div className="login-socialMedia">
-        <div className="g-signin2" data-onsuccess="onSignIn"></div>
+        {/* <div className="g-signin2" data-onsuccess="onSignIn"></div> */}
         {/* <a href="#" onClick={signOut()}>
           Sign out
         </a> */}
@@ -24,18 +40,23 @@ const Login = () => {
       </div>
 
       <div className="login-email">
-        <input
-          type="email"
-          name="emailAdress"
-          id="login-email"
-          placeholder="Direccion de Correo Electronico"
-        />
-        <input
-          type="password"
-          name="passwordUser"
-          id="password-user"
-          placeholder="Contraseña"
-        />
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            name="emailAdress"
+            id="login-email"
+            placeholder="Direccion de Correo Electronico"
+            onChange={handleChangeInput}
+          />
+          <input
+            type="password"
+            name="passwordUser"
+            id="password-user"
+            placeholder="Contraseña"
+            onChange={handleChangeInput}
+          />
+          <button type="submit">Iniciar sesion</button>
+        </form>
       </div>
 
       <div className="login-options">
@@ -45,7 +66,7 @@ const Login = () => {
             name="remembermePassword"
             id="rememberme-password"
           />
-          <label for="remembermePassword">Recuerdame</label>
+          <label htmlFor="remembermePassword">Recuerdame</label>
         </div>
         <button>
           <a href="#iniciarSesion">Iniciar Sesión</a>
