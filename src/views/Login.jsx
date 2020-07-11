@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logoSpoti from "../assets/static/logoSpoti.png";
+import logoSpoti from "../assets/static/logo.png";
 import "../assets/styles/components/Login.scss";
 
 const Login = () => {
-
   return (
     <section className="Container">
       <section className="Container-login">
@@ -22,32 +21,40 @@ const Login = () => {
 
         <form className="Container-login__form">
           <input
-            type='email'
-            name='email'
-            id='email'
-            placeholder='Correo electronico'
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electronico"
             // onChange={handleChangeForm}
           />
           <input
-            type='password'
-            name='password'
-            id='password'
-            placeholder='Contraseña'
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña"
             // onChange={handleChangeForm}
           />
           <div className="options firstContainer__form">
-            <div className='checkbox'>
-              <input type='checkbox' name='remembermePassword' id='rememberme-password' />
-              <label htmlFor='remembermePassword'>Recuerdame</label>
+            <div className="checkbox">
+              <input
+                type="checkbox"
+                name="remembermePassword"
+                id="rememberme-password"
+              />
+              <label htmlFor="remembermePassword">Recuerdame</label>
             </div>
-            <button type='button'>Iniciar Sesión</button>
+            <button type="button">Iniciar Sesión</button>
           </div>
         </form>
 
-        <div className='Container-login-signUp'>
-          <Link to='/login' className='firstContainer__complement-link'>¿Se te ha olvidado la contraseña?</Link>
-          <h2 className='firstContainer__complement'>¿No tienes cuenta?</h2>
-          <Link to='/register' className='firstContainer__complement-link'>Suscribete a Spotify</Link>
+        <div className="Container-login-signUp">
+          <Link to="/login" className="firstContainer__complement-link">
+            ¿Se te ha olvidado la contraseña?
+          </Link>
+          <h2 className="firstContainer__complement">¿No tienes cuenta?</h2>
+          <Link to="/register" className="firstContainer__complement-link">
+            Suscribete a Spotify
+          </Link>
         </div>
       </section>
     </section>

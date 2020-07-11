@@ -8,8 +8,12 @@ const Register = () => {
     email: "",
     name: "",
   });
+
   const firstContainer = useRef();
   const secondContainer = useRef();
+  const radioSeletedMale = useRef();
+  const radioSeletedFemale = useRef();
+  const radioSeletedOther = useRef();
 
   const handleNextContainer = () => {
     firstContainer.current.style.display = "none";
@@ -66,7 +70,7 @@ const Register = () => {
           <button className="btn-facebook">Registrate con Facebook</button>
           <button className="btn-google">Registrate con google</button>
           <h2>¿Ya eres usuario?</h2>
-          <Link to="/login" className="firstContainer__complement-link">
+          <Link to="/login" className="complement-link">
             Iniciar sesión
           </Link>
         </div>
@@ -79,24 +83,52 @@ const Register = () => {
           <h2>Ya casi</h2>
         </div>
         <form className="secondContainer__form">
-          <label>¿Cúal es tu fecha de nacimiento?</label>
+          <h3>¿Cúal es tu género?</h3>
           <div className="form__birthday">
             <input type="text" name="day" id="day" placeholder="Día" />
-            <select name="month" id="month"></select>
+            <select name="month" id="month">
+              <option value="none">Mes</option>
+              <option value="Enero">Enero</option>
+              <option value="Febrero">Febrero</option>
+              <option value="Marzo">Marzo</option>
+              <option value="Abril">Abril</option>
+              <option value="Mayo">Mayo</option>
+              <option value="Junio">Junio</option>
+              <option value="Julio">Julio</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Septiembre">Septiembre</option>
+              <option value="Octubre">Octubre</option>
+              <option value="Noviembre">Noviembre</option>
+              <option value="Diciembre">Diciembre</option>
+            </select>
             <input type="text" name="year" id="year" placeholder="Año" />
           </div>
-          <label>¿Cúal es tu género?</label>
-          <div className="radiobutton">
-            <input type="radio" name="female" id="female" />
-            <span>Mujer</span>
+          <h3>¿Cúal es tu género?</h3>
+          <div
+            className="radioButton"
+            onClick={() => (radioSeletedFemale.current.checked = true)}
+          >
+            <input
+              type="radio"
+              name="sex"
+              id="female"
+              ref={radioSeletedFemale}
+            />
+            <label htmlFor="female">Mujer</label>
           </div>
-          <div className="radiobutton">
-            <input type="radio" name="male" id="male" />
-            <span>Hombre</span>
+          <div
+            className="radioButton"
+            onClick={() => (radioSeletedMale.current.checked = true)}
+          >
+            <input type="radio" name="sex" id="male" ref={radioSeletedMale} />
+            <label htmlFor="male">Hombre</label>
           </div>
-          <div className="radiobutton">
-            <input type="radio" name="other" id="other" />
-            <span>Otro</span>
+          <div
+            className="radioButton"
+            onClick={() => (radioSeletedOther.current.checked = true)}
+          >
+            <input type="radio" name="sex" id="other" ref={radioSeletedOther} />
+            <label htmlFor="other">Otro</label>
           </div>
           <p>
             Al hacer clic en{" "}
@@ -111,11 +143,9 @@ const Register = () => {
             compartimos y protegemos sus datos personales, lea la{" "}
             <strong>Política de Privacidad</strong>
           </p>
-          <button type="button" onClick={handlePreviusContainer}>
-            Unirte a Spotify
-          </button>
+          <button type="button">Unete</button>
         </form>
-        <button type="button" onClick={handlePreviusContainer}>
+        <button className="complement-button" onClick={handlePreviusContainer}>
           Atrás
         </button>
       </section>
