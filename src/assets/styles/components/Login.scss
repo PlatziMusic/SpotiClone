@@ -58,6 +58,9 @@
     & .checkbox {
       width: 100%;
       margin-left: 65px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
     }
     & .checkbox [type="checkbox"] {
       width: 20px;
@@ -90,9 +93,15 @@
 .Container-login-signUp{
   display: inherit;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   text-align: center;
   margin: 20px 0;
+  & .subscribe {
+    @include btn-plataform;
+    width: 250px;
+    text-decoration: none;
+  }
   & .firstContainer__complement-link {
     @include link
   }
