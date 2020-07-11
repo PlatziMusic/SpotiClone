@@ -1,7 +1,6 @@
 @import "../Vars.scss";
 @import "../Mixins.scss";
 
-
 .Container {
   width: 100%;
   min-height: 100vh;
@@ -34,7 +33,6 @@
     width: 150px;
   }
 }
-
 
 .Container-login__form {
   display: inherit;
@@ -87,14 +85,14 @@
   }
 }
 
-.Container-login-signUp{
+.Container-login-signUp {
   display: inherit;
   flex-direction: column;
   width: 100%;
   text-align: center;
   margin: 20px 0;
   & .firstContainer__complement-link {
-    @include link
+    @include hyperLink;
   }
   & h2 {
     font-family: $font-secundary;
