@@ -52,7 +52,7 @@ const Login = () => {
             ¿Se te ha olvidado la contraseña?
           </Link>
           <h2 className="firstContainer__complement">¿No tienes cuenta?</h2>
-          <Link to="/register" className="firstContainer__complement-link">
+          <Link to="/register" className="subscribe">
             Suscribete a Spotify
           </Link>
         </div>

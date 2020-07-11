@@ -52,7 +52,7 @@
 @mixin btn-facebook {
   @include btn;
   min-width: 150px;
-  max-width: 250px;
+  width: 250px;
   background-color: $background-facebook;
   color: $font-white-color;
 }
@@ -60,7 +60,7 @@
 @mixin btn-google {
   @include btn;
   min-width: 150px;
-  max-width: 250px;
+  width: 250px;
   background-color: $background-google;
 }
 
