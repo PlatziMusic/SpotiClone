@@ -83,7 +83,7 @@ const Register = () => {
           <h2>Ya casi</h2>
         </div>
         <form className="secondContainer__form">
-          <h3>¿Cúal es tu género?</h3>
+          <h3>¿Cúal es tu fecha de nacimiento?</h3>
           <div className="form__birthday">
             <input type="text" name="day" id="day" placeholder="Día" />
             <select name="month" id="month">
