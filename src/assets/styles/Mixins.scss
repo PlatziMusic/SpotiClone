@@ -92,3 +92,22 @@
   font-size: 12px;
   text-transform: uppercase;
 }
+
+@mixin btnHeader {
+  font-family: $font-secundary;
+  background-color: inherit;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $background-input;
+    color: $font-grey-color;
+  }
+  &:disabled {
+    background-color: inherit;
+    color: $font-gray-color;
+    cursor: auto;
+  }
+}
