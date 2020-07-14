@@ -9,7 +9,7 @@
 ## Run npm
 
     npm start
-## Como se trabajara en la arama
+## Como se trabajara en la rama
 
 **Se tiene tres ramas dev, tests y master.**
 En master no se subira nada hasta que estemos listo para hacer el deployment
