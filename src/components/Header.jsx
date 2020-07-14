@@ -10,7 +10,7 @@ const Header = () => {
         <button disabled>
           <img src={before} />
         </button>
-        <button>
+        <button disabled>
           <img src={next} />
         </button>
       </div>
