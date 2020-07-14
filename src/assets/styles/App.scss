@@ -7,8 +7,26 @@
 }
 
 body {
-  background-color: $fondo;
+  background-color: $background;
 }
 
-.btn {
+::-webkit-scrollbar {
+  background-color: $background;
+  border: 1px 0 1px 1px solid $background;
+  width: 10px;
+}
+::-webkit-scrollbar:hover {
+  background-color: $card-color;
+  border: 1px 0 1px 1px solid $background;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $card-color;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $font-gray-color;
+  border-radius: 10px;
 }

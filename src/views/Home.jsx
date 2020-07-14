@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Card from "../components/Card";
+import Player from "../components/Player";
 import "../assets/styles/components/Home.scss";
 
 const Home = () => {
@@ -184,6 +185,7 @@ const Home = () => {
           info="Two door cinema club"
         />
       </section>
+      <Player />
     </>
   );
 };
