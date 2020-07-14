@@ -1,6 +1,7 @@
 import React from "react";
-import next from "../assets/static/icons/next.svg";
-import before from "../assets/static/icons/before.svg";
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
+
 import "../assets/styles/components/Header.scss";
 
 const Header = () => {
@@ -8,10 +9,10 @@ const Header = () => {
     <header className="header">
       <div className="header__buttons">
         <button disabled>
-          <img src={before} />
+          <NavigateBeforeIcon />
         </button>
         <button>
-          <img src={next} />
+          <NavigateNextIcon />
         </button>
       </div>
       <div className="header__profile">
