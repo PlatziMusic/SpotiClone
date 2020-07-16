@@ -32,13 +32,13 @@ const Playlist = () => {
 
       <div className="playlist-options">
         <button type="button" className="play">
-          <PlayArrowIcon style={{ fontSize: 40 }} />
+          <PlayArrowIcon className="icon" style={{ fontSize: 40 }} />
         </button>
         <button type="button" className="like">
-          <FavoriteBorderIcon style={{ fontSize: 40 }} />
+          <FavoriteBorderIcon className="icon" style={{ fontSize: 40 }} />
         </button>
         <button type="button" className="more">
-          <MoreHorizIcon style={{ fontSize: 40 }} />
+          <MoreHorizIcon className="icon" style={{ fontSize: 40 }} />
         </button>
       </div>
 
@@ -46,7 +46,10 @@ const Playlist = () => {
         <div className="song">
           <div className="song-button">
             <button type="button">
-              <MusicNoteIcon style={{ fontSize: 30 }} />
+              <MusicNoteIcon
+                className="icon icon-Song"
+                style={{ fontSize: 30 }}
+              />
             </button>
           </div>
           <div className="song-details">
@@ -56,7 +59,7 @@ const Playlist = () => {
             </div>
             <div className="song-details-more">
               <button type="button">
-                <MoreHorizIcon style={{ fontSize: 40 }} />
+                <MoreHorizIcon className="icon" style={{ fontSize: 40 }} />
               </button>
             </div>
           </div>

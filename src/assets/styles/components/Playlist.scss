@@ -45,8 +45,7 @@
   display: flex;
   margin: 2em;
   & button {
-    background: none;
-    border: none;
+    @include btnPlaylist;
     margin: 0 10px;
   }
   & .play {
@@ -80,13 +79,11 @@
   &-button {
     width: 5%;
     & button {
-      background: none;
-      border: none;
+      @include btnPlaylist;
     }
   }
   &-details {
     width: 90%;
-    // background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,13 +97,20 @@
     &-more {
       width: 5%;
       & button {
-        background: none;
-        border: none;
+        @include btnPlaylist;
       }
     }
   }
   &-duration {
     width: 5%;
     text-align: center;
+  }
+}
+
+.icon {
+  color: $font-white-color;
+  outline: none;
+  .icon-songPlay {
+    display: none;
   }
 }
