@@ -41,10 +41,14 @@
 }
 
 .playlist-options {
-  // background-color: black;
-  color: white;
+  color: $font-white-color;
   display: flex;
   margin: 2em;
+  & button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+  }
   & .play {
     width: 56px;
     height: 56px;
@@ -56,11 +60,6 @@
     cursor: pointer;
     background-color: $background-plataform;
     color: $font-white-color;
-    & span {
-      position: relative;
-      font-size: 2em;
-      left: 2px;
-    }
   }
 }
 
@@ -76,25 +75,34 @@
   margin: 1.5em 0;
   color: white;
   &:hover {
-    background-color: rgba(199, 187, 25, 0.856);
+    background-color: rgba(83, 83, 83, 0.322);
   }
-  &-buttonPlay {
+  &-button {
     width: 5%;
+    & button {
+      background: none;
+      border: none;
+    }
   }
-  // &-play button {
-
-  // }
   &-details {
     width: 90%;
-    background-color: red;
+    // background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    & p {
+    &-titles {
       margin: 5px 0;
+      & a {
+        color: $font-white-color;
+        text-decoration: none;
+      }
     }
-    &-moreOptions {
+    &-more {
       width: 5%;
+      & button {
+        background: none;
+        border: none;
+      }
     }
   }
   &-duration {

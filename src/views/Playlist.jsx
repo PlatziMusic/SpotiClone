@@ -1,5 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/styles/components/Playlist.scss";
+import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import PlayArrowIcon from "@material-ui/icons/PlayArrow";
+import MusicNoteIcon from "@material-ui/icons/MusicNote";
 
 const Playlist = () => {
   return (
@@ -19,39 +24,40 @@ const Playlist = () => {
               src="https://i.scdn.co/image/5390ca6bd240b2a15b71868d1d105c3d6a7a7b17"
               alt="imageMiniatura"
             />
-            {/* <p>
-              <Link to="/">Vampire Weekend </Link> • 2008 • 34 min 18 seg
-            </p> */}
+            <Link to="/">Vampire Weekend</Link>
+            <p>• 2008 • 34 min 18 seg</p>
           </div>
         </div>
       </div>
 
       <div className="playlist-options">
         <button type="button" className="play">
-          <span>▶</span>
+          <PlayArrowIcon style={{ fontSize: 40 }} />
         </button>
         <button type="button" className="like">
-          Like
+          <FavoriteBorderIcon style={{ fontSize: 40 }} />
         </button>
-        <div className="more-options">
-          <button type="button">...</button>
-        </div>
+        <button type="button" className="more">
+          <MoreHorizIcon style={{ fontSize: 40 }} />
+        </button>
       </div>
 
       <div className="tracklist">
         <div className="song">
-          <div className="song-buttonPlay">
-            <button type="button">Play</button>
+          <div className="song-button">
+            <button type="button">
+              <MusicNoteIcon style={{ fontSize: 30 }} />
+            </button>
           </div>
           <div className="song-details">
             <div className="song-details-titles">
               <p>Nombre de la canción</p>
-              {/* <p>
-                <Link to="/">Artista</Link>
-              </p> */}
+              <Link to="/">Artista</Link>
             </div>
-            <div className="song-details-moreOptions">
-              <button type="button">...</button>
+            <div className="song-details-more">
+              <button type="button">
+                <MoreHorizIcon style={{ fontSize: 40 }} />
+              </button>
             </div>
           </div>
           <div className="song-duration">
