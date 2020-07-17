@@ -8,10 +8,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__buttons">
-        <button disabled>
+        <button className="header__buttons--btn" disabled>
           <NavigateBeforeIcon />
         </button>
-        <button>
+        <button className="header__buttons--btn">
           <NavigateNextIcon />
         </button>
       </div>

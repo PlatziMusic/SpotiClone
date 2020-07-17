@@ -14,10 +14,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & .header__buttons {
+  &__buttons {
     width: auto;
     margin-left: 10px;
-    & button {
+    &--btn {
       @include btnHeader;
       padding: 5px 8px;
       box-sizing: border-box;
