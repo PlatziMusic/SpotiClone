@@ -1,17 +1,22 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+
 import Register from "../views/Register";
 import Login from "../views/Login";
 import "../assets/styles/App.scss";
 import Home from "../views/Home";
+import Layout from "./Layout";
 
 const App = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/register" component={Register} />
-      <Route exact path="/login" component={Login} />
-    </Switch>
+    <Layout>
+      <Switch>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/login" component={Login} />
+        <Redirect from="/" to="/home" />
+      </Switch>
+    </Layout>
   </BrowserRouter>
 );
 

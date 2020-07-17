@@ -5,9 +5,10 @@
   position: fixed;
   z-index: 1;
   top: 0;
+  right: 0;
   min-width: 320px;
   max-width: 100%;
-  width: 100%;
+  width: calc(100% - 14em);
   height: 70px;
   background-color: $card-color;
   display: flex;
@@ -45,4 +46,8 @@
       font-family: $font-secundary;
     }
   }
+}
+
+.icon{
+  
 }

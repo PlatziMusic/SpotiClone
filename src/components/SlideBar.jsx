@@ -28,9 +28,9 @@ const SlideBar = () => {
         <button>Crear una playlist</button>
       </div>
 
-      <div class="slidebar-yourPlaylist">
+      <div className="slidebar-yourPlaylist">
         <h2>Tus playlist</h2>
-        <div class="slidebar-yourPlaylist-list">
+        <div className="slidebar-yourPlaylist-list">
           <p>
             <a href="#">Lista 1</a>
           </p>

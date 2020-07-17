@@ -6,6 +6,7 @@
   height: 70px;
   background-color: $card-color;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   color: $font-grey-color;
   display: grid;
