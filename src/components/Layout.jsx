@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {history == "/register" || history == "/login" ? (
-        <div className="content">{children}</div>
+        <>{children}</>
       ) : (
         <>
           <Header />

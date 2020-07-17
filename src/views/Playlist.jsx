@@ -9,7 +9,7 @@ import Song from "../components/Song";
 
 const Playlist = () => {
   return (
-    <>
+    <section className="playlist">
       <PlaylistHead
         caratula="https://i.scdn.co/image/ab67616d00001e0201e2ebfbf4f8147621c8a866"
         type="ÁLBUM"
@@ -55,7 +55,7 @@ const Playlist = () => {
           duration="4:03"
         />
       </section>
-    </>
+    </section>
   );
 };
 

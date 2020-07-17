@@ -3,8 +3,6 @@
 @import "../components/PlaylistHead.scss";
 @import "../components/Song.scss";
 
-body {
+.playlist {
   background: linear-gradient(270deg, $font-gray-color, $background);
 }
-
-
