@@ -1,0 +1,59 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+.tracklist {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+  color: white;
+  &:hover {
+    background: $hover-color;
+  }
+  &-button {
+    width: 5%;
+    & button {
+      @include btnPlaylist;
+    }
+  }
+  &-details {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-titles {
+      margin: 5px 0;
+      & a {
+        color: $font-white-color;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    &-more {
+      width: 5%;
+      & button {
+        @include btnPlaylist;
+      }
+    }
+  }
+  &-duration {
+    width: 5%;
+    text-align: center;
+  }
+}
+
+.icon {
+  color: $font-white-color;
+  outline: none;
+  &-songPlay:hover {
+    color: $background-plataform;
+  }
+}
