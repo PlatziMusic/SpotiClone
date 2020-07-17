@@ -9,8 +9,6 @@ import "../assets/styles/components/Home.scss";
 const Home = () => {
   return (
     <>
-      <SlideBar />
-      <Header />
       <section className="test">
         <Card
           image="https://resources.claroshop.com/medios-plazavip/fotos/productos_sears1/original/2751408.jpg"
@@ -188,8 +186,6 @@ const Home = () => {
           info="Two door cinema club"
         />
       </section>
-      <Player />
-      {/* <Playlist /> */}
     </>
   );
 };

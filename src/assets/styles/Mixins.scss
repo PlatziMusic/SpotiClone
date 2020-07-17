@@ -101,6 +101,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  color: $font-gray-color;
   &:hover {
     background-color: $background-input;
     color: $font-grey-color;
