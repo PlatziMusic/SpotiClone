@@ -3,6 +3,7 @@ import SlideBar from "../components/SlideBar";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import Player from "../components/Player";
+// import Playlist from "../views/Playlist";
 import "../assets/styles/components/Home.scss";
 
 const Home = () => {
