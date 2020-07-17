@@ -1,0 +1,89 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+$margin: 0 15px;
+
+.slidebar-container {
+  height: calc(100% - 70px);
+  width: 14em;
+  background-color: $card-color;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.logo {
+  // width: 100%;
+  text-align: center;
+  // & img {
+  //     margin: 20px 0;
+  //     width: 150px;
+  // }
+}
+.slidebar-menu {
+  margin: $margin;
+  &-option {
+    display: flex;
+    align-items: center;
+  }
+  & img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  & p {
+    font-size: 1.2em;
+  }
+}
+
+.slidebar-newPlaylist {
+  text-align: center;
+  & button {
+    color: white;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    background: #1db954;
+    cursor: pointer;
+    outline: none;
+    margin: $margin;
+  }
+  & button:hover {
+    opacity: 0.8;
+  }
+}
+
+.slidebar-yourPlaylist {
+  margin: $margin;
+  color: white;
+  &-list {
+    overflow: auto;
+    height: 250px;
+  }
+  &-list::-webkit-scrollbar {
+    background-color: $background;
+    border: 1px 0 1px 1px solid $background;
+    width: 10px;
+    border-radius: 10px;
+  }
+  &-list::-webkit-scrollbar:hover {
+    background-color: $card-color;
+    border: 1px 0 1px 1px solid $background;
+    width: 10px;
+  }
+
+  &-list::-webkit-scrollbar-thumb {
+    background: #1db954;
+    border-radius: 10px;
+  }
+
+  &-list::-webkit-scrollbar-thumb:hover {
+    background: $font-gray-color;
+    border-radius: 10px;
+  }
+  &-list p a {
+    color: white;
+    text-decoration: none;
+  }
+}

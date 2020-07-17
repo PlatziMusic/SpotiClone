@@ -1,0 +1,115 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+.Container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  color: $font-white-color;
+  & .Container-login {
+    @include alignCard;
+    height: 90%;
+    background-color: $card-color;
+    grid-column: 2 / 3;
+    align-self: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
+    display: flex;
+  }
+}
+
+.logo {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  & h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  & img {
+    width: 150px;
+  }
+}
+
+.Container-login__form {
+  display: inherit;
+  flex-direction: column;
+  width: 100%;
+  & input {
+    @include input-plataform;
+    align-self: center;
+    margin: 5px 0;
+  }
+  & button {
+    @include btn-plataform;
+    margin-top: 10px;
+    align-self: center;
+  }
+  & .options {
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    & .checkbox {
+      width: 100%;
+      margin-left: 65px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+    }
+    & .checkbox [type="checkbox"] {
+      width: 20px;
+    }
+  }
+}
+
+.division {
+  display: inline-block;
+  font-family: $font-secundary;
+  margin-top: 5px;
+  font-size: 14px;
+  color: $font-grey-color;
+}
+
+.Container-login__complement {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  & .btn-facebook {
+    @include btn-facebook;
+    margin-top: 5px;
+  }
+  & .btn-google {
+    @include btn-google;
+    margin-top: 10px;
+  }
+}
+
+.Container-login-signUp {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  & .subscribe {
+    @include btn-plataform;
+    width: 250px;
+    text-decoration: none;
+  }
+  & .firstContainer__complement-link {
+    @include hyperLink;
+  }
+  & h2 {
+    font-family: $font-secundary;
+    margin: 20px 0 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $font-grey-color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,120 @@
+@import "./Vars.scss";
+
+@mixin input-plataform {
+  width: 80%;
+  padding: 10px 0;
+  background-color: $background-input;
+  outline: none;
+  border: none;
+  color: $font-white-color;
+  padding-left: 10px;
+}
+@mixin inputBirthday {
+  padding: 5px 0;
+  background-color: $background-input;
+  outline: none;
+  border: none;
+  color: $font-white-color;
+  padding-left: 10px;
+}
+
+@mixin alignCard {
+  height: 90%;
+  background-color: $card-color;
+  grid-column: 2 / 3;
+  align-self: center;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin btn {
+  padding: 10px 10px;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-family: $font-secundary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+@mixin btn-plataform {
+  @include btn;
+  width: 150px;
+  background-color: $background-plataform;
+  color: $font-white-color;
+}
+
+@mixin btn-facebook {
+  @include btn;
+  min-width: 150px;
+  width: 250px;
+  background-color: $background-facebook;
+  color: $font-white-color;
+}
+
+@mixin btn-google {
+  @include btn;
+  min-width: 150px;
+  width: 250px;
+  background-color: $background-google;
+}
+
+@mixin radio {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid $font-grey-color;
+  margin: 5px 0;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &input[type="radio"]:checked {
+    background-color: red;
+  }
+  & label {
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: $font-secundary;
+  }
+}
+
+@mixin hyperLink {
+  font-family: $font-secundary;
+  color: $font-white-color;
+  letter-spacing: 1px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@mixin btnHeader {
+  font-family: $font-secundary;
+  background-color: inherit;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $font-gray-color;
+  &:hover {
+    background-color: $background-input;
+    color: $font-grey-color;
+  }
+  &:disabled {
+    background-color: inherit;
+    color: $font-gray-color;
+    cursor: auto;
+  }
+}
+@mixin btnPlaylist {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
