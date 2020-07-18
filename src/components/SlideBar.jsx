@@ -4,6 +4,7 @@ import logoSpoti from "../assets/static/logo.png";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
 import QueueMusicIcon from "@material-ui/icons/QueueMusic";
+import { Link } from "react-router-dom";
 
 const SlideBar = () => {
   return (
@@ -14,94 +15,102 @@ const SlideBar = () => {
 
       <div className="slidebar-menu">
         <div className="slidebar-menu-option">
-          <HomeIcon className="icon-menu" />
-          <p>Inicio</p>
+          <Link to="/Home">
+            <HomeIcon className="icon-menu" />
+            <p>Inicio</p>
+          </Link>
         </div>
         <div className="slidebar-menu-option">
-          <SearchIcon className="icon-menu" />
-          <p>Buscare</p>
+          <Link to="/">
+            <SearchIcon className="icon-menu" />
+            <p>Buscar</p>
+          </Link>
         </div>
         <div className="slidebar-menu-option">
-          <QueueMusicIcon className="icon-menu" />
-          <p>Tu Biblioteca</p>
+          <Link to="/">
+            <QueueMusicIcon className="icon-menu" />
+            <p>Tu Biblioteca</p>
+          </Link>
         </div>
       </div>
 
       <div className="slidebar-newPlaylist">
-        <button>Crear una playlist</button>
+        <button type="button">
+          <Link to="/">Crear una playlist</Link>
+        </button>
       </div>
 
       <div className="slidebar-yourPlaylist">
         <h2>Tus playlist</h2>
         <div className="slidebar-yourPlaylist-list">
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
           <p>
-            <a href="#">Lista 1</a>
+            <Link to="/Playlist">Lista 1</Link>
           </p>
         </div>
       </div>

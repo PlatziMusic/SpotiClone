@@ -7,7 +7,7 @@ $margin: 0 15px;
   height: calc(100% - 70px);
   width: 14em;
   background-color: $card-color;
-  color: white;
+  color: $font-white-color;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -16,26 +16,28 @@ $margin: 0 15px;
   justify-content: space-between;
 }
 .logo {
-  // width: 100%;
   text-align: center;
-  // & img {
-  //     margin: 20px 0;
-  //     width: 150px;
-  // }
 }
 
 .slidebar-menu {
   margin: $margin;
   &-option {
-    display: flex;
-    align-items: center;
     margin: 10px 5px;
+  }
+  &-option:hover {
+    background: $hover-color;
   }
   .icon-menu {
     margin-right: 10px;
     width: 30px;
     height: 30px;
+    color: $font-white-color;
+  }
+  & a {
+    display: flex;
+    align-items: center;
     color: white;
+    text-decoration: none;
   }
   & p {
     font-size: 1.2em;
@@ -57,17 +59,33 @@ $margin: 0 15px;
   & button:hover {
     opacity: 0.8;
   }
+  & a {
+    text-decoration: none;
+    color: $font-white-color;
+  }
 }
 
 .slidebar-yourPlaylist {
   margin: $margin;
-  color: white;
+  color: $font-white-color;
   & h2 {
     margin: 10px 0;
   }
   &-list {
     overflow: auto;
     height: 250px;
+  }
+  & p {
+    margin: 10px 0;
+    width: 95%;
+  }
+  & p:hover {
+    background: $hover-color;
+  }
+  &-list p a {
+    color: $font-white-color;
+    text-decoration: none;
+    padding-right: 70%;
   }
   &-list::-webkit-scrollbar {
     background-color: $background;
@@ -90,9 +108,4 @@ $margin: 0 15px;
   //   background: $font-gray-color;
   //   border-radius: 10px;
   // }
-
-  &-list p a {
-    color: white;
-    text-decoration: none;
-  }
 }

@@ -35,13 +35,13 @@ const PlaylistHead = ({
 
       <div className="playlist-options">
         <button type="button" className="play">
-          <PlayArrowIcon className="icon" style={{ fontSize: 40 }} />
+          <PlayArrowIcon className="icon" />
         </button>
         <button type="button" className="like">
-          <FavoriteBorderIcon className="icon" style={{ fontSize: 40 }} />
+          <FavoriteBorderIcon className="icon icon-like" />
         </button>
         <button type="button" className="more">
-          <MoreHorizIcon className="icon" style={{ fontSize: 40 }} />
+          <MoreHorizIcon className="icon" />
         </button>
       </div>
     </section>

@@ -4,7 +4,6 @@
 .playlist-head {
   width: 100%;
   height: 340px;
-  // background-color: #7a592e;
   color: white;
   display: grid;
   grid-template-columns: 25% 75%;
@@ -59,5 +58,11 @@
     cursor: pointer;
     background-color: $background-plataform;
     color: $font-white-color;
+  }
+  .icon {
+    font-size: 40px;
+    &-like:hover {
+      color: $background-plataform;
+    }
   }
 }
