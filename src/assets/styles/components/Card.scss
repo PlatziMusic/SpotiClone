@@ -56,3 +56,28 @@
     }
   }
 }
+
+.containerCard {
+  display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  // grid-template-columns: repeat(5, 220px);
+  // grid-template-rows: 50px 250px;
+  // place-items: center;
+  // padding: 15px 0;
+  // grid-gap: 10px 0;
+  // margin: 20px;
+  margin: 0px 20px;
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    color: $font-white-color;
+  }
+  &-head a {
+    color: $font-white-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
