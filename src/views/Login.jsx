@@ -25,14 +25,14 @@ const Login = () => {
             name='email'
             id='email'
             placeholder='Correo electronico'
-            // onChange={handleChangeForm}
+          // onChange={handleChangeForm}
           />
           <input
             type='password'
             name='password'
             id='password'
             placeholder='Contraseña'
-            // onChange={handleChangeForm}
+          // onChange={handleChangeForm}
           />
           <div className='options firstContainer__form'>
             <div className='checkbox'>

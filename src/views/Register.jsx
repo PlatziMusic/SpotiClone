@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import useGenere from '../hooks/useGenere';
 import logoSpotify from '../assets/static/logo.png';
 import '../assets/styles/components/Register.scss';
 
@@ -12,7 +11,9 @@ const Register = () => {
 
   const firstContainer = useRef();
   const secondContainer = useRef();
-  
+  const radioSeletedMale = useRef();
+  const radioSeletedFemale = useRef();
+  const radioSeletedOther = useRef();
 
   const handleNextContainer = () => {
     firstContainer.current.style.display = 'none';
@@ -105,7 +106,7 @@ const Register = () => {
           <h3>¿Cúal es tu género?</h3>
           <div
             className='radioButton'
-            // onClick={useGenere}
+            onClick={() => (radioSeletedFemale.current.checked = true)}
           >
             <input
               type='radio'
@@ -117,29 +118,29 @@ const Register = () => {
           </div>
           <div
             className='radioButton'
-            // onClick={useGenere}
+            onClick={() => (radioSeletedMale.current.checked = true)}
           >
             <input type='radio' name='sex' id='male' ref={radioSeletedMale} />
             <label htmlFor='male'>Hombre</label>
           </div>
           <div
             className='radioButton'
-            // onClick={useGenere}
+            onClick={() => (radioSeletedOther.current.checked = true)}
           >
             <input type='radio' name='sex' id='other' ref={radioSeletedOther} />
             <label htmlFor='other'>Otro</label>
           </div>
           <p>
-            Al hacer clic en&#160;
+            Al hacer clic en&nbsp
             <strong>
-              &#160;
+              &nbsp
               Unirme a Spotify, acepta los Términos y Condiciones de Uso de
               Spotify
             </strong>
           </p>
           <p>
             Para obtener más información sobre cómo recopilamos, utilizamos,
-            compartimos y protegemos sus datos personales, lea la&#160;
+            compartimos y protegemos sus datos personales, lea la&nbsp
             <strong>Política de Privacidad</strong>
           </p>
           <button type='button'>Unete</button>
