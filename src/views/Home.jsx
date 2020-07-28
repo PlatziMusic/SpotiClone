@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
+import SectionCard from '../components/SectionCard';
 import '../assets/styles/components/Home.scss';
 
 const Home = () => {
