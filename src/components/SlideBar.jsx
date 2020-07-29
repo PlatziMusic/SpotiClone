@@ -36,7 +36,7 @@ const SlideBar = () => {
 
       <div className='slidebar-newPlaylist'>
         <button type='button'>
-          <Link to='/'>Crear una playlist</Link>
+          <Link to='./components/NewPlaylist'>Crear una playlist</Link>
         </button>
       </div>
 
