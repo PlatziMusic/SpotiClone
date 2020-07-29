@@ -1,0 +1,130 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+
+.adToPlaylistPlaylist {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+	color: $font-white-color;
+  background-color: $background-secondary;
+	&-container {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+		& span {
+			font-size: 2em;
+		}
+		& h1 {
+			font-size: 4em;
+			margin: 1em 0;
+			letter-spacing: 1.76px;
+		}
+    }
+    & .inputButtons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 25%;
+		margin: 1em auto;
+		& .right button{
+      @include btnNewPlaylist;
+			width: 200px;
+			display: inline-block;
+			background-color: $background-plataform;
+		}
+	}
+}    
+
+.playlistCard-container {
+  display: grid;
+  grid-template-columns: repeat(7, 180px);
+  gap: 10px;
+  text-align: center;
+  place-content: center;
+}
+
+.card {
+  @include Card;
+    width: 180px;
+    height: 240px;
+    background-color: none;
+    &__image-container {
+      width: 100%;
+      height: 170px;
+      position: relative;
+      // & img {
+      //   padding: 5px 5px 0 5px;
+      //   width: calc(100% - 10px);
+      //   height: calc(100% - 5px);
+      // }
+    }
+    &__image-link {
+      position: absolute;
+      background: rgba(0, 0, 0, .7);
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        color: $font-white-color;
+        text-decoration: none;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__info {
+      // width: 100%;
+      // height: 70px;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      &--data {
+        padding: 0;
+        width: 125px;
+        & h2 {
+          // font-size: 16px;
+          margin: 5px 0;
+        }
+        & p {
+          // font-size: 12px;
+          margin: 5px 0;
+        }
+      }
+    }
+    //   &--btn {
+    //     padding-right: 10px;
+    //     & button {
+    //       transition: 0.2s ease-in-out;
+    //       opacity: 0;
+    //       visibility: hidden;
+    //       border: none;
+    //       outline: none;
+    //       width: 40px;
+    //       height: 40px;
+    //       border-radius: 50%;
+    //       cursor: pointer;
+    //       background-color: $background-plataform;
+    //       & .PlayArrowIcon {
+    //         font-size: 40px;
+    //         color: $font-white-color;
+    //       }
+    //     }
+    //   }
+    //   .active {
+    //     opacity: 1;
+    //     visibility: visible;
+    //   }
+    // }
+}    

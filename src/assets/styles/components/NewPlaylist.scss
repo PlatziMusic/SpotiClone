@@ -2,13 +2,13 @@
 @import "../Mixins.scss";
 
 .newPlaylist {
-	background-color: rgba(0, 0, 0, .9);
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: $font-white-color;
+	background-color: $background-secondary;
 	&-container {
 		width: 100%;
 		text-align: center;

@@ -6,9 +6,9 @@ import '../assets/styles/components/Home.scss';
 const Home = () => {
   return (
     <>
-      <section className="1">
+      <section className='uno'>
         <SectionCard
-          titleContainer="Recomendaciones"
+          titleContainer='Recomendaciones'
         />
         <section className='test'>
           <Card
@@ -38,9 +38,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="2">
+      <section className='dos'>
         <SectionCard
-          titleContainer="Tus favoritas"
+          titleContainer='Tus favoritas'
         />
         <section className='test'>
           <Card
@@ -70,9 +70,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="3">
+      <section className='tres'>
         <SectionCard
-          titleContainer="Lo mas nuevo"
+          titleContainer='Lo mas nuevo'
         />
         <section className='test'>
           <Card
@@ -102,9 +102,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="4">
+      <section className='cuatro'>
         <SectionCard
-          titleContainer="Tarde Soleada"
+          titleContainer='Tarde Soleada'
         />
         <section className='test'>
           <Card
@@ -134,9 +134,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="5">
+      <section className='cinco'>
         <SectionCard
-          titleContainer="Vuelve a escuhar"
+          titleContainer='Vuelve a escuhar'
         />
         <section className='test'>
           <Card
@@ -166,9 +166,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="6">
+      <section className='seis'>
         <SectionCard
-          titleContainer="Viejitas pero romanticas"
+          titleContainer='Viejitas pero romanticas'
         />
         <section className='test'>
           <Card
@@ -198,9 +198,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="7">
+      <section className='siete'>
         <SectionCard
-          titleContainer="Modo sad"
+          titleContainer='Modo sad'
         />
         <section className='test'>
           <Card
@@ -230,9 +230,9 @@ const Home = () => {
           />
         </section>
       </section>
-      <section className="8">
+      <section className='ocho'>
         <SectionCard
-          titleContainer="Para el atardecer"
+          titleContainer='Para el atardecer'
         />
         <section className='test'>
           <Card
