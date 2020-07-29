@@ -1,7 +1,6 @@
 @import "../Vars.scss";
 @import "../Mixins.scss";
 
-
 .newPlaylist {
 	background-color: rgba(0, 0, 0, .9);
 	width: 100%;
@@ -9,7 +8,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: $font-white-color;
 	&-container {
 		width: 100%;
 		text-align: center;
@@ -26,7 +25,7 @@
 		background-color: rgb(40, 40, 40);
 		height: 10em;
 		&-spacing {
-			color: white;
+			color: $font-white-color;
 			height: 100%;
 			width: 50%;
 			margin: auto;
@@ -49,7 +48,7 @@
 				box-sizing: border-box;
 				background-color: rgb(40, 40, 40);
 				color: #fff;
-				caret-color: #1db954;
+				caret-color: $background-plataform;
 				background-color: transparent;
 				border: none;
 				outline: none;
@@ -63,34 +62,13 @@
 		width: 25%;
 		margin: 2em auto;
 		& .left button{
+			@include btnNewPlaylist;
 			background-color: transparent;
-			border: 1px solid #535353;
-			font-size: 12px;
-			line-height: 18px;
-			font-weight: 700;
-			letter-spacing: 1.76px;
-			text-transform: uppercase;
-			border-radius: 500px;
-			color: #fff;
-			padding: 8px 34px;
-			display: inline-block;
-			cursor: pointer;
-			text-align: center;
+			border: 1px solid $font-gray-color;
 		}
 		& .right button{
-			font-size: 12px;
-			line-height: 18px;
-			font-weight: 700;
-			letter-spacing: 1.76px;
-			text-transform: uppercase;
-			border: 2px solid transparent;
-			border-radius: 500px;
-			color: #fff;
-			padding: 8px 34px;
-			display: inline-block;
-			cursor: pointer;
-			text-align: center;
-			background-color: #1db954;
+			@include btnNewPlaylist;
+			background-color: $background-plataform;
 		}
 	}
 }

@@ -35,11 +35,11 @@
   outline: none;
   cursor: pointer;
   border: none;
-  font-family: $font-secundary;
   text-transform: uppercase;
   letter-spacing: 1px;
   box-sizing: border-box;
   font-weight: 500;
+  font-family: $font-secundary;
 }
 
 @mixin btn-plataform {
@@ -117,4 +117,15 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@mixin btnNewPlaylist {
+  @include btn;
+  padding: 8px 34px;
+  letter-spacing: 1.76px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-white-color;
 }
