@@ -1,29 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Raleway&display=swap");
 //letters color
 $font-white-color: #fff;
+
 $font-grey-color: #828282;
 $font-gray-color: #535353;
+$otro: #ebebeb;
 
 //typo
 $font-primary: "Noto Sans JP", sans-serif;
 $font-secundary: "Raleway", sans-serif;
 
-//background
-$background: #2f2f2f;
-$background-secondary: rgba(0, 0, 0, .7);
-// $background: #111111;
-$card-color: #282828;
-// $card-color: #363635;
+
+$background: #221f3b;
+$background-secondary: rgba(34, 31, 59,.9);
+$card-color: rgba(235, 235, 235, .9);
+
 
 //formularios
-$background-input: #1c1c1c;
-$background-plataform: #1db954;
-// $background-plataform: #26b1d0;
-// $background-plataform: #3132a2;
-// $background-plataform: #03738c;
+// $background-input: rgb(5, 5, 5);
+$background-input: rgba(5, 5, 5, .7);
+$background-plataform: #6f4a8e;
 $background-facebook: #4267b2;
 $background-google: #fff;
 
 //Hover
-
-$hover-color: #535353;
+$hover-color: rgba(111, 74, 142, 0.5);

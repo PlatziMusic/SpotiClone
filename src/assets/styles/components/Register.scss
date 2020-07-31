@@ -29,6 +29,9 @@
     @include input-plataform;
     align-self: center;
     margin: 5px 0;
+    &::placeholder {
+      color: $font-white-color;
+    }
   }
   & button {
     @include btn-plataform;
@@ -73,6 +76,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  input::placeholder {
+    color: $font-white-color;
+  }
   & label {
     font-size: 14px;
   }
@@ -87,8 +93,9 @@
     }
     & select {
       @include inputBirthday;
-      color: rgba(255, 255, 255, 0.45);
+      color: $font-white-color;
       font-weight: 400;
+
     }
   }
   & .radioButton {
