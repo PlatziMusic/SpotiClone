@@ -1,0 +1,51 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+body {
+  height: 100vh;
+  color: $otro;
+  font-family: $font-secundary;
+  background: linear-gradient(0deg, $background-plataform, $background);
+}
+
+.editPlaylistMain {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.editPlaylistData {
+  width: 800px;
+  margin: 0 auto;
+  & h3 {
+    font-size: 3em;
+    margin: .5em 0;
+  }
+  & .form {
+    display: grid;
+    margin-bottom: 2em;
+    & label {
+      margin: 10px 0 5px 0;
+      font-size: 2em;
+    }
+  }
+  & input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.8em;
+    outline: none;
+  }
+}
+
+.btn {
+  padding: 15px 0;
+  background: $background-plataform;
+  color: $otro;
+  border: 1px solid $otro;
+  width: 150px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+  margin-right: 1em;
+}

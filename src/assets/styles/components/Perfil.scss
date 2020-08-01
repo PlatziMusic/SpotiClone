@@ -1,0 +1,58 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+body {
+  // width: 100%;
+  height: 100vh;
+  color: $font-white-color;
+  background: linear-gradient(0deg, $background-plataform, $background);
+}
+
+.playlistHeader {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  & .btn {
+    width: 200px;
+  }
+}
+
+.playlistMain {
+  width: 1000px;
+  margin: 0 auto;
+  &-title {
+    font-size: 3em;
+    margin: 0;
+  }
+  .playlistData {
+    &-table {
+      width: 100%;
+      margin-bottom: 2em;
+      border-collapse: collapse;
+    }
+  }
+  & .playlistData h3 {
+    font-size: 2em;
+    margin: 32px 0 16px 0;
+  }
+}
+
+.btn {
+  padding: 15px 0;
+  background: $background-plataform;
+  color: $font-white-color;
+  border: 1px solid $font-white-color;
+  width: 150px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+}
+
+td {
+  border-bottom: 1px solid $font-white-color;
+  padding: 20px 0;
+  font-size: 1.3em;
+}
