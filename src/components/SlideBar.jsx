@@ -1,12 +1,18 @@
-import React from 'react';
-import '../assets/styles/components/SlideBar.scss';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import QueueMusicIcon from '@material-ui/icons/QueueMusic';
-import { Link } from 'react-router-dom';
+
+import NewPlaylist from './NewPlaylist';
 import logoSpoti from '../assets/static/logo.png';
+import '../assets/styles/components/SlideBar.scss';
 
 const SlideBar = () => {
+  const [modal, setModal] = useState({
+    isOpen: false,
+  });
   return (
     <section className='slidebar-container'>
       <div className='logo'>
@@ -35,10 +41,12 @@ const SlideBar = () => {
       </div>
 
       <div className='slidebar-newPlaylist'>
-        <button type='button'>
-          <Link to='./components/NewPlaylist'>Crear una playlist</Link>
-        </button>
+        <button type='button' onClick={() => setModal({ isOpen: true })}>Crear una nueva playlist</button>
       </div>
+
+      {
+        modal.isOpen && <NewPlaylist onClose={() => setModal({ isOpen: false })} />
+      }
 
       <div className='slidebar-yourPlaylist'>
         <h2>Tus playlist</h2>

@@ -2,6 +2,13 @@
 @import "../Mixins.scss";
 
 .newPlaylist {
+	z-index: 3;
+	position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -20,9 +27,16 @@
 			margin: 1rem 0;
 			letter-spacing: 1.76px;
 		}
+		& button {
+			background: transparent;
+			color: inherit;
+			outline: none;
+			border: none;
+			cursor: pointer;
+		}
 	}
 	& .inputBox {
-		background-color: rgb(40, 40, 40);
+		background-color: $background;
 		height: 10em;
 		&-spacing {
 			color: $font-white-color;
