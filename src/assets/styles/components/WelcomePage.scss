@@ -1,0 +1,64 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+
+.hero-fondo {
+  background-image: url('../../static/triangulo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-welcomePage {
+  color: $font-white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6em;
+  &-img {
+    width: 180px;
+    margin-left: 2em;
+  }
+  &-nav {
+    &List {
+      display: flex;
+      list-style: none;
+      &-Link {
+        margin-right: 2em;
+        & a {
+          text-decoration: none;
+          color: $font-white-color;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}  
+
+.hero-welcomePage {
+  width: 100%;
+  background: rgba(34, 31, 59, .8);
+  height: 100vh;
+  &-container {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px $font-white-color;
+    padding: 6em 0 0 5em;
+  }
+  &-title {
+    font-size: 4em;
+    margin: .5em 0 .3em 0;
+  }
+  &-subtitle {
+    font-size: 2em;
+    margin: 0 0 1em 0;
+  }
+  &-button {
+    @include btn-plataform;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    width: 250px;
+    text-shadow: 0 0 5px $font-white-color;
+  }
+}

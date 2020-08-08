@@ -6,6 +6,7 @@ import Login from '../views/Login';
 import Playlist from '../views/Playlist';
 import '../assets/styles/App.scss';
 import Home from '../views/Home';
+import WelcomePage from '../views/WelcomePage';
 import Layout from '../components/Layout';
 import ViewUser from '../components/ViewUser';
 import Album from '../components/Album';
@@ -17,6 +18,7 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/login' component={Login} />
+        <Route exact path='/home' component={WelcomePage} />
         <Route exact path='/playlist' component={Playlist} />
         <Route exact path='/user' component={ViewUser} />
         <Route exact path='/album' component={Album} />

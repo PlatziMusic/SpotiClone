@@ -9,16 +9,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {history === '/register' || history === '/login' ? (
+      {history === '/register' || history === '/login' || history === '/home' ? (
         <>{children}</>
       ) : (
-        <>
-          <Header />
-          <SlideBar />
-          <div className='content'>{children}</div>
-          <Player />
-        </>
-      )}
+          <>
+            <Header />
+            <SlideBar />
+            <div className='content'>{children}</div>
+            <Player />
+          </>
+        )}
     </>
   );
 };
