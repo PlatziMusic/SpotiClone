@@ -33,7 +33,7 @@ const SlideBar = () => {
           </Link>
         </div>
         <div className='slidebar-menu-option'>
-          <Link to='/'>
+          <Link to='/user'>
             <QueueMusicIcon className='icon-menu' />
             <p>Tu Biblioteca</p>
           </Link>

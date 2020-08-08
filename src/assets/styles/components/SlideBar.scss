@@ -49,13 +49,13 @@ $margin: 0 15px;
   text-align: center;
   & button {
     color: white;
-    height: 50px;
+    height: auto;
     font-size: 1.2em;
     border: none;
     background: $background-plataform;
     cursor: pointer;
     outline: none;
-    padding: $margin;
+    padding: 5px 15px;
   }
   & button:hover {
     opacity: 0.8;
