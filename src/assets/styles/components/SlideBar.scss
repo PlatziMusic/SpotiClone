@@ -73,12 +73,12 @@ $margin: 0 15px;
     margin: 10px 0;
   }
   &-list {
-    overflow: auto;
+    overflow: overlay;
     height: 250px;
   }
   & p {
     margin: 5px;
-    width: 95%;
+    width: 90%;
   }
   & p:hover {
     background: $hover-color;
@@ -86,7 +86,7 @@ $margin: 0 15px;
   &-list p a {
     color: $font-white-color;
     text-decoration: none;
-    padding: 0 65% 0 1%;
+    padding: 0 0% 0 2%;
   }
   &-list::-webkit-scrollbar {
     background-color: $font-white-color;

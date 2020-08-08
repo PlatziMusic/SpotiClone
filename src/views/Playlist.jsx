@@ -12,46 +12,46 @@ const Playlist = () => {
     <section className='playlist'>
       <PlaylistHead
         caratula='https://i.scdn.co/image/ab67616d00001e0201e2ebfbf4f8147621c8a866'
-        type='ÁLBUM'
-        nameArtist='Vampire Weekend'
+        type='PLAYLIST'
+        namePlaylist='Vampire Weekend'
         imageArtist='https://i.scdn.co/image/5390ca6bd240b2a15b71868d1d105c3d6a7a7b17'
-        linkArtist='Fer romero'
+        linkArtist='Pedro Ramirez'
         duration='• 2008 • 34 min 18 seg'
       />
       <section className='songs'>
         <Song
-          nameSong='Mansard Roof'
+          nameSong='This Life'
           nameArtist='Vampire Weekend'
-          duration='2:07'
+          duration='4:07'
         />
         <Song
-          nameSong='Oxford Comma'
+          nameSong='Harmony Hall'
           nameArtist='Vampire Weekend'
           duration='3:15'
         />
         <Song nameSong='A-punk' nameArtist='Vampire Weekend' duration='2:17' />
         <Song
-          nameSong='Cape Cod Kwassa Kwassa'
-          nameArtist='Vampire Weekend'
+          nameSong='Oh baby'
+          nameArtist='LCD Soundsystem'
           duration='3:34'
         />
-        <Song nameSong='M79' nameArtist='Vampire Weekend' duration='4:15' />
-        <Song nameSong='Campus' nameArtist='Vampire Weekend' duration='2:56' />
+        <Song nameSong='Step' nameArtist='Vampire Weekend' duration='4:15' />
+        <Song nameSong='I Can Change' nameArtist='LCD Soundsystem' duration='2:56' />
         <Song nameSong='Bryn' nameArtist='Vampire Weekend' duration='2:13' />
         <Song
-          nameSong='One (Blake´s Got A New Face)'
-          nameArtist='Vampire Weekend'
+          nameSong='Good Luck'
+          nameArtist='Broken Bells'
           duration='3:13'
         />
         <Song
-          nameSong='I Stand Corrected'
-          nameArtist='Vampire Weekend'
+          nameSong='Shelter'
+          nameArtist='Broken Bells'
           duration='2:39'
         />
-        <Song nameSong='Walcott' nameArtist='Vampire Weekend' duration='3:41' />
+        <Song nameSong='Inside Out' nameArtist='Spoon' duration='3:41' />
         <Song
-          nameSong='The Kids Don´t Stand A Chance'
-          nameArtist='Vampire Weekend'
+          nameSong='No Bullets Spent'
+          nameArtist='Spoon'
           duration='4:03'
         />
       </section>

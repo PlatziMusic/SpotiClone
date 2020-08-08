@@ -21,7 +21,7 @@ const SlideBar = () => {
 
       <div className='slidebar-menu'>
         <div className='slidebar-menu-option'>
-          <Link to='/Home'>
+          <Link to='/'>
             <HomeIcon className='icon-menu' />
             <p>Inicio</p>
           </Link>
@@ -52,10 +52,10 @@ const SlideBar = () => {
         <h2>Tus playlist</h2>
         <div className='slidebar-yourPlaylist-list'>
           <p>
-            <Link to='/Playlist'>Lista 1</Link>
+            <Link to='/Album'>Aztlan</Link>
           </p>
           <p>
-            <Link to='/Playlist'>Lista 1</Link>
+            <Link to='/Playlist'>Vampire Weekend</Link>
           </p>
           <p>
             <Link to='/Playlist'>Lista 1</Link>
