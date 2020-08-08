@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/PlaylistHead.scss';
+import '../assets/styles/components/AlbumHead.scss';
 import { Link } from 'react-router-dom';
 
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
@@ -8,10 +8,10 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 // import '../components/Icons';
 
-const PlaylistHead = ({
+const AlbumHead = ({
   caratula,
   type,
-  namePlaylist,
+  nameAlbum,
   imageArtist,
   linkArtist,
   duration,
@@ -24,7 +24,7 @@ const PlaylistHead = ({
         </div>
         <div className='playlist-head-details'>
           <h5>{type}</h5>
-          <h1>{namePlaylist}</h1>
+          <h1>{nameAlbum}</h1>
           <div className='metadatos'>
             <img src={imageArtist} alt='imageMiniatura' />
             <Link to='/'>{linkArtist}</Link>
@@ -48,4 +48,4 @@ const PlaylistHead = ({
   );
 };
 
-export default PlaylistHead;
+export default AlbumHead;

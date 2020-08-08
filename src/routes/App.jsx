@@ -8,6 +8,7 @@ import '../assets/styles/App.scss';
 import Home from '../views/Home';
 import Layout from '../components/Layout';
 import ViewUser from '../components/ViewUser';
+import Album from '../components/Album';
 
 const App = () => (
   <BrowserRouter>
@@ -18,6 +19,7 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/playlist' component={Playlist} />
         <Route exact path='/user' component={ViewUser} />
+        <Route exact path='/album' component={Album} />
       </Switch>
     </Layout>
   </BrowserRouter>

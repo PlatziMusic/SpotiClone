@@ -3,21 +3,6 @@
 
 .card {
   @include Card;
-  height: 250px;
-  &__info {
-    text-align: left;
-    height: 80px;
-    &--data {
-      padding-left: 0px;
-      width: 150px;
-      & h2 {
-        margin: 5px;
-      }
-      & p {
-        margin: 5px;
-      }
-    }
-  }
 }
 
 .encabezado-playlist {
