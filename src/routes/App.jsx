@@ -1,5 +1,7 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from '../redux/store';
 
 import Register from '../views/Register';
 import Login from '../views/Login';
@@ -12,19 +14,21 @@ import ViewUser from '../components/ViewUser';
 import Album from '../components/Album';
 
 const App = () => (
-  <BrowserRouter>
-    <Layout>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/register' component={Register} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/home' component={WelcomePage} />
-        <Route exact path='/playlist' component={Playlist} />
-        <Route exact path='/user' component={ViewUser} />
-        <Route exact path='/album' component={Album} />
-      </Switch>
-    </Layout>
-  </BrowserRouter>
+  <Provider store={store}>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/register' component={Register} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/home' component={WelcomePage} />
+          <Route exact path='/playlist' component={Playlist} />
+          <Route exact path='/user' component={ViewUser} />
+          <Route exact path='/album' component={Album} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
+  </Provider>
 );
 
 export default App;

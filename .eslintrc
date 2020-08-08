@@ -22,6 +22,7 @@
   "rules": {
     "jsx-a11y/label-has-associated-control": 0,
     "react/jsx-filename-extension": 0,
+    "import/prefer-default-export": 0,
     "array-bracket-spacing": 2,
     "arrow-body-style": 0,
     "block-scoped-var": 2,
