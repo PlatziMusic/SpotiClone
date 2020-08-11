@@ -22,9 +22,11 @@ const App = () => (
           <Route exact path='/register' component={Register} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/home' component={WelcomePage} />
-          <Route exact path='/playlist' component={Playlist} />
           <Route exact path='/user' component={ViewUser} />
+          <Route exact path='/playlist' component={Playlist} />
+          <Route exact path='/playlist/:id' component={Playlist} />
           <Route exact path='/album' component={Album} />
+          <Route exact path='/album/:id' component={Album} />
         </Switch>
       </Layout>
     </BrowserRouter>
