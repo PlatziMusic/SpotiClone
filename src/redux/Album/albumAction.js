@@ -24,7 +24,7 @@ const fetchAlbumFailure = (error) => {
 export const fetchAlbums = () => {
   return (dispatch) => {
     dispatch(fetchAlbumRequest());
-    axios.get('https://rickandmortyapi.com/api/character')
+    axios.get('https://4159b0f1a771.ngrok.io/album')
       .then((response) => {
         const album = response.data;
         dispatch(fetchAlbumSuccess(album));
