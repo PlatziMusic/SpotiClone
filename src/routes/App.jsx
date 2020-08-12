@@ -8,7 +8,9 @@ import Login from '../views/Login';
 import Playlist from '../views/Playlist';
 import '../assets/styles/App.scss';
 import Home from '../views/Home';
+import Search from '../views/Search';
 import WelcomePage from '../views/WelcomePage';
+import Results from '../views/Results';
 import Layout from '../components/Layout';
 import ViewUser from '../components/ViewUser';
 import Album from '../components/Album';
@@ -22,6 +24,8 @@ const App = () => (
           <Route exact path='/register' component={Register} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/home' component={WelcomePage} />
+          <Route exact path='/search' component={Search} />
+          <Route exact path='/results' component={Results} />
           <Route exact path='/playlist' component={Playlist} />
           <Route exact path='/user' component={ViewUser} />
           <Route exact path='/album' component={Album} />

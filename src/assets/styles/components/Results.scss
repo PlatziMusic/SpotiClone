@@ -1,0 +1,35 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+.results {
+  margin-top: 1em;
+  .containerCard {
+    margin: 0;
+  }
+  .containerCard-head{
+    display: grid;
+    grid-template-columns: 82% 10%;
+    grid-template-rows: 50px;
+    place-content: center;
+    align-items: center;
+    color: $font-white-color;
+    & h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    & a {
+      color: $font-white-color;
+      text-align: right;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+  & .resultsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    gap: 6px;
+    text-align: center;
+    place-content: center;
+  }
+}

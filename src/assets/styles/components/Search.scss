@@ -1,0 +1,48 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+
+.search {
+  margin: 5em 0;
+  & h2 {
+    margin: .5em 0;
+
+  }
+}
+
+.searchHead {
+  margin: 10px 46px;
+  color: $font-white-color;
+  & .carrusel {
+    display: grid;
+    grid-template-columns: repeat(3,340px);
+    width: 100%;
+    grid-template-rows: 150px;
+    gap: 10px;
+    & .cardCarrusel {
+      background: $background;
+      border: 1px solid $font-white-color;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+}
+
+.searchGenders {
+  color: $font-white-color;
+  margin: 10px 46px;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(6, 165px);
+    grid-template-rows: 165px;
+    gap: 10px;
+    & .cardGenders{
+      width: 165px;
+      height: 165px;
+      background: $background;
+      border: 1px solid $font-white-color;
+      text-align: center;
+      border-radius: 10px;
+    }
+  }
+}

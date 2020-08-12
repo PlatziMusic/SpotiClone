@@ -27,7 +27,7 @@ const SlideBar = () => {
           </Link>
         </div>
         <div className='slidebar-menu-option'>
-          <Link to='/'>
+          <Link to='/search'>
             <SearchIcon className='icon-menu' />
             <p>Buscar</p>
           </Link>
@@ -58,7 +58,7 @@ const SlideBar = () => {
             <Link to='/Playlist'>Vampire Weekend</Link>
           </p>
           <p>
-            <Link to='/Playlist'>Lista 1</Link>
+            <Link to='/results'>Resultados</Link>
           </p>
           <p>
             <Link to='/Playlist'>Lista 1</Link>
