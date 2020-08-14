@@ -3,11 +3,13 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import '../assets/styles/components/Card.scss';
 import { Link } from 'react-router-dom';
 
-const Card = ({ title, info, image, url }) => {
+const Card = ({ title, info, image, id }) => {
   const btn = useRef();
 
+  console.log(id);
   return (
-    <section
+    <li
+      key={!id ? 0 : id}
       className='card'
       onMouseEnter={() => {
         btn.current.className = 'active';
@@ -16,7 +18,7 @@ const Card = ({ title, info, image, url }) => {
         btn.current.className = null;
       }}
     >
-      <Link to={url} className='card-link'>
+      <Link to='/playlist/' className='card-link'>
         <section className='card__image'>
           <img src={image} alt='Imagen' />
         </section>
@@ -32,8 +34,10 @@ const Card = ({ title, info, image, url }) => {
           </div>
         </section>
       </Link>
-    </section>
+    </li>
   );
 };
+
+// ant design
 
 export default Card;

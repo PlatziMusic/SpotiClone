@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logoSpotify from '../assets/static/logo.png';
+import logo from '../assets/static/logo.png';
 import '../assets/styles/components/Register.scss';
 
 const Register = () => {
@@ -36,7 +36,7 @@ const Register = () => {
     <section className='Container'>
       <section className='firstContainer' ref={firstContainer}>
         <div className='logo'>
-          <img src={logoSpotify} alt='Logo' />
+          <img src={logo} alt='Logo' />
           <h2>Empieza a escuchar musica con nosotros</h2>
         </div>
         <form className='firstContainer__form'>
@@ -79,7 +79,7 @@ const Register = () => {
       {/* separador */}
       <section className='secondContainer' ref={secondContainer}>
         <div className='logo'>
-          <img src={logoSpotify} alt='Logo' />
+          <img src={logo} alt='Logo' />
           <h2>Ya casi</h2>
         </div>
         <form className='secondContainer__form'>
@@ -134,8 +134,8 @@ const Register = () => {
             Al hacer clic en&nbsp
             <strong>
               &nbsp
-              Unirme a Spotify, acepta los Términos y Condiciones de Uso de
-              Spotify
+              Unirme a Melody, acepta los Términos y Condiciones de Uso de
+              Melody
             </strong>
           </p>
           <p>

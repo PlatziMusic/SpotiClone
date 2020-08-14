@@ -1,20 +1,18 @@
 import React from 'react';
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
-
+// import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+// import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import '../assets/styles/components/Header.scss';
 
 const Header = () => {
   return (
     <header className='header'>
       <div className='header__buttons'>
-        <button type='button' className='header__buttons--btn'>
-          {/* disabled */}
+        {/* <button type='button' className='header__buttons--btn'>
           <NavigateBeforeIcon />
         </button>
         <button type='button' className='header__buttons--btn'>
           <NavigateNextIcon />
-        </button>
+        </button> */}
       </div>
       <div className='header__profile'>
         <img
