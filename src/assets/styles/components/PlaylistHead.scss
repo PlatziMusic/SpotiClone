@@ -6,16 +6,18 @@
   height: 340px;
   color: white;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 25% 70%;
+  place-content: center;
+  margin-top: 70px;
   &-image {
-    margin-top: 20%;
     text-align: center;
+    margin: auto 0em;
   }
   &-image img {
-    width: 232px;
+    width: 100%;
   }
   &-details {
-    margin-top: 13%;
+    margin: auto 1em;
   }
   &-details h5 {
     font-size: 1em;
@@ -42,7 +44,7 @@
 .playlist-options {
   color: $font-white-color;
   display: flex;
-  margin: 2em;
+  margin: 2em 1em;
   & button {
     @include btnPlaylist;
     margin: 0 10px;
@@ -63,6 +65,92 @@
     font-size: 40px;
     &-like:hover {
       color: $background-plataform;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .playlist-head {
+    height: 220px;
+    &-details{
+      & h1 {
+        font-size: 3em;
+      }
+      & h5 {
+        font-size: .8em;
+      }
+    }
+    &-datails .metadatos {
+      font-size: .9em;
+    }
+  }
+  .playlist-options {
+    margin: 1em;
+  }
+}
+
+@media (max-width: 768px){
+  .playlist-head {
+    height: 180px;
+    &-details{
+      & h1 {
+        font-size: 2.5em;
+      }
+      & h5 {
+        font-size: .8em;
+      }
+      & .metadatos {
+        font-size: .5em 1em;
+      }
+    }
+  }
+  .playlist-options {
+    & .play{
+      width: 46px;
+      height: 46px;
+    }
+    & .icon {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .playlist-head {
+    grid-template-columns: none;
+    height: auto;
+    &-image img{
+      width: 50%;
+    }
+    &-details {
+      text-align: center;
+      & .metadatos{
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .playlist-head {
+    &-details {
+      & h1 {
+        font-size: 2em;
+      }
+      & .metadatos {
+        font-size: .8em;
+      }
+    }
+  }
+  .playlist-options{
+    margin: 1em;
+    justify-content: center;
+    & .play{
+      width: 36px;
+      height: 36px;
+    }
+    & .icon {
+      font-size: 30px;
     }
   }
 }

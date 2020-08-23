@@ -10,7 +10,7 @@
   bottom: 0;
   color: $font-grey-color;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
   grid-template-areas: "info progress volume";
   & .player__info {
     grid-area: info;

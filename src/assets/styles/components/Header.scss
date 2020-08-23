@@ -8,7 +8,7 @@
   right: 0;
   min-width: 320px;
   max-width: 100%;
-  width: calc(100% - 14em);
+  width: calc(100%);
   height: 70px;
   background-color: $background;
   display: flex;
@@ -46,4 +46,17 @@
       font-family: $font-secundary;
     }
   }
+}
+
+.logo-home {
+  margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+.logo-home {
+  padding: 0;
+  & img {
+    width: 125px;
+  }
+}
 }
