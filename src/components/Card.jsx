@@ -5,11 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ title, info, image, id }) => {
   const btn = useRef();
-
-  console.log(id);
   return (
-    <li
-      key={!id ? 0 : id}
+    <section
       className='card'
       onMouseEnter={() => {
         btn.current.className = 'active';
@@ -18,7 +15,7 @@ const Card = ({ title, info, image, id }) => {
         btn.current.className = null;
       }}
     >
-      <Link to='/playlist/' className='card-link'>
+      <Link to={`/Album/${id}`} className='card-link'>
         <section className='card__image'>
           <img src={image} alt='Imagen' />
         </section>
@@ -34,7 +31,7 @@ const Card = ({ title, info, image, id }) => {
           </div>
         </section>
       </Link>
-    </li>
+    </section>
   );
 };
 

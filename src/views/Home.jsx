@@ -5,9 +5,11 @@ import Card from '../components/Card';
 import SectionCard from '../components/SectionCard';
 import '../assets/styles/components/Home.scss';
 
+
+
 const Home = () => {
   const dispatch = useDispatch();
-  const albums = useSelector((state) => state.album);
+  const albums = useSelector((state) => state.albums);
 
   useEffect(() => {
     dispatch(fetchAlbums());
@@ -15,7 +17,7 @@ const Home = () => {
 
   return albums.loading ? (<h2>Loading</h2>) :
     albums.error ?
-      (<h2>{albums.error}</h2>) :
+    (<h2>{albums.error}</h2>) :
       (
         <>
           <section className='uno'>
@@ -23,8 +25,8 @@ const Home = () => {
             <ul className='test'>
               {
                 albums &&
-                  albums.album &&
-                    albums.album.map((album) => <Card id={album.id} image={album.image} title={album.name} info={album.artists} />)
+                  albums.albums &&
+                    albums.albums.map((album) => <Card key={album.id} id={album.id} image={album.image} title={album.name_Album} info={album.name_Artist} />)
               }
             </ul>
           </section>

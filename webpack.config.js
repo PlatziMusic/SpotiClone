@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -18,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /\.node_modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
@@ -61,6 +62,8 @@ module.exports = {
   //Para las rutas
   devServer: {
     historyApiFallback: true,
+    hot: true,
+    open: true
   },
   //plugins
   plugins: [
@@ -71,5 +74,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
+    new webpack.HotModuleReplacementPlugin()
   ],
 };
