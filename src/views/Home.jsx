@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchAlbums } from '../redux';
-import Card from '../components/Card';
-import SectionCard from '../components/SectionCard';
+import Card from '../components/Cards/Card';
+import SectionCard from '../components/Cards/SectionCard';
 import '../assets/styles/components/Home.scss';
 
 

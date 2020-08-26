@@ -5,9 +5,9 @@ import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import QueueMusicIcon from '@material-ui/icons/QueueMusic';
 
-import NewPlaylist from './NewPlaylist';
+import NewPlaylist from '../Modals/NewPlaylist';
 // import logoSpoti from '../assets/static/logo.png';
-import '../assets/styles/components/SlideBar.scss';
+import '../../assets/styles/components/SlideBar.scss';
 
 const SlideBar = () => {
   const [modal, setModal] = useState({

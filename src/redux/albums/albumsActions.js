@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { URL } from '../api'
 import { FETCH_ALBUMS_REQUEST, FETCH_ALBUMS_SUCCESS, FETCH_ALBUMS_FAILURE, FETCH_GET_ALBUM } from './albumsTypes';
 
 const fetchAlbumsRequest = () => {
@@ -31,29 +32,17 @@ const fetchGetAlbum = (album) => {
 export const fetchAlbums = () => {
   return (dispatch) => {
     dispatch(fetchAlbumsRequest());
-    axios.get('http://localhost:3001/albums')
-      .then((response) => {
-        const albums = response.data;
-        dispatch(fetchAlbumsSuccess(albums));
-      })
-      .catch((error) => {
-        const errorMsg = error.message;
-        dispatch(fetchAlbumsFailure(errorMsg));
-      });
+    axios.get(`${URL}/albums`)
+      .then((response) => dispatch(fetchAlbumsSuccess(response.data)))
+      .catch((error) => dispatch(fetchAlbumsFailure(error.message)));
   };
 };
 
 export const fetchAlbum = (id) => {
   return (dispatch) => {
     dispatch(fetchAlbumsRequest());
-    axios.get(`http://localhost:3001/albums/${id}`)
-      .then(response => {
-        const album = response.data;
-        dispatch(fetchGetAlbum(album))
-      })
-      .catch(error => {
-        const errorMsg = error.message;
-        dispatch(fetchAlbumsFailure(errorMsg));
-      })
+    axios.get(`${URL}/albums/${id}`)
+      .then(response => dispatch(fetchGetAlbum(response.data)))
+      .catch(error => dispatch(fetchAlbumsFailure(error.message)))
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import PlaylistHead from '../components/PlaylistHead';
-import Song from '../components/Song';
+import PlaylistHead from '../components/Playlist/PlaylistHead';
+import Song from '../components/Songs/Song';
 
 import '../assets/styles/components/Playlist.scss';
 // import { Link } from 'react-router-dom';

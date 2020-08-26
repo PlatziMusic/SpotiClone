@@ -2,13 +2,12 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchAlbum } from '../redux';
 import { useParams } from 'react-router-dom';
-import AlbumHead from './AlbumHead';
-import Song from './Song';
+import AlbumHead from '../components/Album/AlbumHead';
+import Song from '../components/Songs/Song';
 
 import '../assets/styles/components/Playlist.scss';
 
 const Album = () => {
-
   const history = useParams().id;
   const dispatch = useDispatch();
   const albums = useSelector((state) => state.albums);
@@ -21,7 +20,7 @@ const Album = () => {
   return (
     <section className='playlist'>
       <AlbumHead
-        caratula={image ? image : null}
+        caratula={image}
         nameAlbum={name_Album}
         linkArtist={name_Artist}
         duration={duration}
@@ -30,7 +29,7 @@ const Album = () => {
       <section className='songs'>
         {
           songs &&
-          songs.map(song => <Song nameSong={song.name} nameArtist={name_Artist} duration={song.duration} />)
+            songs.map(song => <Song key={song.id} nameSong={song.name} nameArtist={name_Artist} duration={song.duration} />)
         }
       </section>
     </section>

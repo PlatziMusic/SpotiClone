@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionCard from '../components/SectionCard';
-import SongResults from '../components/SongResults';
-import Card from '../components/Card';
+import SectionCard from '../components/Cards/SectionCard';
+import SongResults from '../components/Search/SongResults';
+import Card from '../components/Cards/Card';
 import '../assets/styles/components/Results.scss';
 
 const Results = () => {

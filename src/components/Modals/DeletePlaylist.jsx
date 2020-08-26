@@ -1,6 +1,6 @@
 import React from 'react';
 import ClearIcon from '@material-ui/icons/Clear';
-import '../assets/styles/components/NewPlaylist.scss';
+import '../../assets/styles/components/NewPlaylist.scss';
 
 const NewPlaylist = () => {
   return (

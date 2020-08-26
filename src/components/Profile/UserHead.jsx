@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/UserHead.scss';
+import '../../assets/styles/components/UserHead.scss';
 // import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 // import '../components/Icons';

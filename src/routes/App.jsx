@@ -11,9 +11,9 @@ import Home from '../views/Home';
 import Search from '../views/Search';
 import WelcomePage from '../views/WelcomePage';
 import Results from '../views/Results';
-import Layout from '../components/Layout';
-import ViewUser from '../components/ViewUser';
-import Album from '../components/Album';
+import Layout from '../components/Layout/Layout';
+import ViewUser from '../components/Profile/ViewUser';
+import Album from '../views/Album';
 
 const App = () => (
   <Provider store={store}>

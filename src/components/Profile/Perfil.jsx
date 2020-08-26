@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/Perfil.scss';
+import '../../assets/styles/components/Perfil.scss';
 
 const Perfil = () => {
   return (

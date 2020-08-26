@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import ClearIcon from '@material-ui/icons/Clear';
 
-import '../assets/styles/components/AdToPlaylist.scss';
+import '../../assets/styles/components/AdToPlaylist.scss';
 
 const AddToPlaylist = ({ onClose }) => {
   return ReactDOM.createPortal(

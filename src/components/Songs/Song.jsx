@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/Song.scss';
+import '../../assets/styles/components/Song.scss';
 import { Link } from 'react-router-dom';
 // import './Icons';
 

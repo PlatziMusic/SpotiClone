@@ -1,8 +1,8 @@
 import React from 'react';
 import UserHead from './UserHead';
-import Card from './Card';
+import Card from '../Cards/Card';
 
-import '../assets/styles/components/ViewUser.scss';
+import '../../assets/styles/components/ViewUser.scss';
 
 const ViewUser = () => {
   return (

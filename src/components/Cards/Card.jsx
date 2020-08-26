@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import '../assets/styles/components/Card.scss';
+import '../../assets/styles/components/Card.scss';
 import { Link } from 'react-router-dom';
 
 const Card = ({ title, info, image, id }) => {

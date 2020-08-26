@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/Player.scss';
+import '../../assets/styles/components/Player.scss';
 
 const Player = () => {
   return (
