@@ -172,7 +172,6 @@ const Results = () => {
           />
         </div>
       </section>
-
     </section>
   );
 };

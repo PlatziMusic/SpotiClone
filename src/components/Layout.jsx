@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import SlideBar from './SlideBar';
 import Header from './Header';
 import Player from './Player';
+import MenuBottom from './MenuBottom';
 
 const Layout = ({ children }) => {
   const history = useHistory().location.pathname;
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
             <SlideBar />
             <div className='content'>{children}</div>
             <Player />
+            <MenuBottom />
           </>
         )}
     </>

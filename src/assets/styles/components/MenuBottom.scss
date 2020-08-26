@@ -1,0 +1,25 @@
+.MuiBottomNavigation-root{
+  height: 50px;
+  width: 500px;
+  display: none !important;
+  background-color: #221f3b !important;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected{
+  color: white !important;
+  background: #6f4a8e;
+}
+
+.MuiBottomNavigationAction-wrapper{
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .MuiBottomNavigation-root {
+    display: flex !important;
+    max-width: 480px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+}
