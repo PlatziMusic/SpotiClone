@@ -11,7 +11,6 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 const AlbumHead = ({
   caratula,
   nameAlbum,
-  imageArtist,
   linkArtist,
   duration,
   year
@@ -26,7 +25,6 @@ const AlbumHead = ({
           <h5>ALBUM</h5>
           <h1>{nameAlbum}</h1>
           <div className='metadatos'>
-            <img src={imageArtist} alt={linkArtist} />
             <Link to='/'>{linkArtist}</Link>
             <p>&nbsp; • {year} • {duration}</p>
           </div>

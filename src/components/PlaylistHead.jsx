@@ -12,7 +12,6 @@ const PlaylistHead = ({
   caratula,
   type,
   namePlaylist,
-  imageArtist,
   linkArtist,
   duration,
 }) => {
@@ -26,7 +25,6 @@ const PlaylistHead = ({
           <h5>{type}</h5>
           <h1>{namePlaylist}</h1>
           <div className='metadatos'>
-            <img src={imageArtist} alt='imageMiniatura' />
             <Link to='/'>{linkArtist}</Link>
             <p>{duration}</p>
           </div>

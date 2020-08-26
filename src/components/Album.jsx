@@ -12,7 +12,7 @@ const Album = () => {
   const history = useParams().id;
   const dispatch = useDispatch();
   const albums = useSelector((state) => state.albums);
-  const { image, name_Album, name_Artist, duration, year, image_artist, songs } = albums.album;
+  const { image, name_Album, name_Artist, duration, year, songs } = albums.album;
 
   useEffect(() => {
     dispatch(fetchAlbum(history));
@@ -23,7 +23,6 @@ const Album = () => {
       <AlbumHead
         caratula={image ? image : null}
         nameAlbum={name_Album}
-        imageArtist={image_artist}
         linkArtist={name_Artist}
         duration={duration}
         year={year}
@@ -31,7 +30,7 @@ const Album = () => {
       <section className='songs'>
         {
           songs &&
-            songs.map(song => <Song nameSong={song.name} nameArtist={name_Artist} duration={song.duration} />)
+          songs.map(song => <Song nameSong={song.name} nameArtist={name_Artist} duration={song.duration} />)
         }
       </section>
     </section>
