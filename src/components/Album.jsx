@@ -1,61 +1,38 @@
-import React from 'react';
-import '../assets/styles/components/Playlist.scss';
-
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchAlbum } from '../redux';
+import { useParams } from 'react-router-dom';
 import AlbumHead from './AlbumHead';
 import Song from './Song';
 
+import '../assets/styles/components/Playlist.scss';
+
 const Album = () => {
+
+  const history = useParams().id;
+  const dispatch = useDispatch();
+  const albums = useSelector((state) => state.albums);
+  const { image, name_Album, name_Artist, duration, year, image_artist, songs } = albums.album;
+
+  useEffect(() => {
+    dispatch(fetchAlbum(history));
+  }, []);
+
   return (
     <section className='playlist'>
       <AlbumHead
-        caratula='https://i.scdn.co/image/ab67616d00001e021eada1495a082da8a6c3e516'
-        type='ÁLBUM'
-        nameAlbum='Aztlán'
-        imageArtist='https://i.scdn.co/image/aa2fa92d55cd2afee5fbe811c3a4e282c8d10cea'
-        linkArtist='Zoé'
-        duration='• 2018 • 55 min 1 seg'
+        caratula={image ? image : null}
+        nameAlbum={name_Album}
+        imageArtist={image_artist}
+        linkArtist={name_Artist}
+        duration={duration}
+        year={year}
       />
       <section className='songs'>
-        <Song
-          nameSong='Venus'
-          nameArtist='Zoé'
-          duration='4:14'
-        />
-        <Song
-          nameSong='Azul'
-          nameArtist='Zoé'
-          duration='3:14'
-        />
-        <Song nameSong='No hay mal que dure' nameArtist='Zoé' duration='4:52' />
-        <Song
-          nameSong='Al final'
-          nameArtist='Zoé'
-          duration='4:34'
-        />
-        <Song nameSong='Hielo' nameArtist='Zoé' duration='5:02' />
-        <Song nameSong='Luci' nameArtist='Zoé' duration='4:07' />
-        <Song nameSong='Aztlan' nameArtist='Zoé' duration='3:39' />
-        <Song
-          nameSong='Temor y temblor'
-          nameArtist='Zoé'
-          duration='5:28'
-        />
-        <Song
-          nameSong='Renacer'
-          nameArtist='Zoé'
-          duration='6:14'
-        />
-        <Song nameSong='Ella es magia' nameArtist='Zoé' duration='4:08' />
-        <Song
-          nameSong='Oropel'
-          nameArtist='Zoé'
-          duration='4:21'
-        />
-        <Song
-          nameSong='Clarividad'
-          nameArtist='Zoé'
-          duration='5:03'
-        />
+        {
+          songs &&
+            songs.map(song => <Song nameSong={song.name} nameArtist={name_Artist} duration={song.duration} />)
+        }
       </section>
     </section>
   );

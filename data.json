@@ -1,0 +1,359 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name_Album": "Back to Black",
+      "name_Artist": "Amy Winehouse",
+      "duration": "35:00",
+      "year": 2006,
+      "image_artist": "https://i1.wp.com/www.sopitas.com/wp-content/uploads/2012/07/amywinehouse-datos-curiosos1.jpg",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71caoKZoCsL._AC_SL1400_.jpg",
+      "songs": [
+        {
+          "id": "1",
+          "name": "Rehab",
+          "duration": "3:36"
+        },
+        {
+          "id": "2",
+          "name": "You Know I'm No Good",
+          "duration": "3:13"
+        },
+        {
+          "id": "3",
+          "name": "Me & Mr. Jones",
+          "duration": "2:33"
+        },
+        {
+          "id": "4",
+          "name": "Just Friends",
+          "duration": "3:13"
+        },
+        {
+          "id": "5",
+          "name": "Back To Black",
+          "duration": "4:01"
+        },
+        {
+          "id": "6",
+          "name": "Love Is a Losing Game",
+          "duration": "2:35"
+        },
+        {
+          "id": "7",
+          "name": "Tears Dry on Their Own",
+          "duration": "3:06"
+        },
+        {
+          "id": "8",
+          "name": "Wake up Alone",
+          "duration": "3:42"
+        },
+        {
+          "id": "9",
+          "name": "Some Unholy War",
+          "duration": "3:42"
+        },
+        {
+          "id": "10",
+          "name": "He Can Only Hold Her",
+          "duration": "3:42"
+        },
+        {
+          "id": "11",
+          "name": "You Know I'm No Good",
+          "duration": "3:42"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name_Album": "The Slow Rush",
+      "name_Artist": "Tame Impala",
+      "duration": "57:15",
+      "year": 2020,
+      "image_artist": "https://indiehoy.com/wp-content/uploads/2019/01/tame-impala-1.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Tame_Impala_-_The_Slow_Rush.png",
+      "songs": [
+        {
+          "id": "1",
+          "name": "One More Year",
+          "duration": "5:22"
+        },
+        {
+          "id": "2",
+          "name": "Instant Destiny",
+          "duration": "3:13"
+        },
+        {
+          "id": "3",
+          "name": "Borderline",
+          "duration": "3:57"
+        },
+        {
+          "id": "4",
+          "name": "Posthumous Forgiveness",
+          "duration": "6:06"
+        },
+        {
+          "id": "5",
+          "name": "Breathe Deeper",
+          "duration": "6:12"
+        },
+        {
+          "id": "6",
+          "name": "Tomorrow’s Dust",
+          "duration": "5:26"
+        },
+        {
+          "id": "7",
+          "name": "On Track",
+          "duration": "5:01"
+        },
+        {
+          "id": "8",
+          "name": "Lost in Yesterday",
+          "duration": "4:09"
+        },
+        {
+          "id": "9",
+          "name": "Is It True",
+          "duration": "3:58"
+        },
+        {
+          "id": "10",
+          "name": "It Might Be Time",
+          "duration": "4:33"
+        },
+        {
+          "id": "11",
+          "name": "Glimmer",
+          "duration": "2:08"
+        },
+        {
+          "id": "12",
+          "name": "One More Hour",
+          "duration": "7:13"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name_Album": "Nervio del Volcan",
+      "name_Artist": "Caifanes",
+      "duration": "47:05",
+      "year": 1994,
+      "image_artist": "https://as01.epimg.net/mexico/imagenes/2019/03/19/tikitakas/1553036329_565984_1553036671_noticia_normal.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c0/El_nervio_del_volcan.jpg",
+      "songs": [
+        {
+          "id": "1",
+          "name": "Afuera",
+          "duration": "4:48"
+        },
+        {
+          "id": "2",
+          "name": "Miedo",
+          "duration": "4:45"
+        },
+        {
+          "id": "3",
+          "name": "Aquí no es así",
+          "duration": "4:54"
+        },
+        {
+          "id": "4",
+          "name": "Ayer me dijo un ave",
+          "duration": "3:29"
+        },
+        {
+          "id": "5",
+          "name": "Hasta que dejes de respirar",
+          "duration": "4:10"
+        },
+        {
+          "id": "6",
+          "name": "Aviéntame",
+          "duration": "4:32"
+        },
+        {
+          "id": "7",
+          "name": "El animal",
+          "duration": "3:05"
+        },
+        {
+          "id": "8",
+          "name": "Quisiera ser alcohol",
+          "duration": "5:09"
+        },
+        {
+          "id": "9",
+          "name": "Pero nunca me caí",
+          "duration": "4:12"
+        },
+        {
+          "id": "10",
+          "name": "El año del dragón",
+          "duration": "3:47"
+        },
+        {
+          "id": "11",
+          "name": "La llorona",
+          "duration": "5:10"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name_Album": "Magical Mistery Tour",
+      "name_Artist": "The Beatles",
+      "duration": "36:35",
+      "year": 1967,
+      "image_artist": "https://www.tonica.la/__export/1587072837064/sites/debate/img/2020/04/16/the_beatles_documental_get_back.jpg_423682103.jpg",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91Sx7bFxVmL._AC_SL1200_.jpg",
+      "songs": [
+        {
+          "id": "1",
+          "name": "Magical Mystery Tour",
+          "duration": "2:48"
+        },
+        {
+          "id": "2",
+          "name": "The Fool on the Hill",
+          "duration": "3:00"
+        },
+        {
+          "id": "3",
+          "name": "Flying",
+          "duration": "2:16"
+        },
+        {
+          "id": "4",
+          "name": "Blue Jay Way",
+          "duration": "3:50"
+        },
+        {
+          "id": "5",
+          "name": "Your Mother Should Know",
+          "duration": "2:33"
+        },
+        {
+          "id": "6",
+          "name": "I Am the Walrus",
+          "duration": "4:35"
+        },
+        {
+          "id": "7",
+          "name": "Hello Goodbye",
+          "duration": "3:24"
+        },
+        {
+          "id": "8",
+          "name": "Strawberry Fields Forever",
+          "duration": "4:05"
+        },
+        {
+          "id": "9",
+          "name": "Penny Lane",
+          "duration": "3:00"
+        },
+        {
+          "id": "10",
+          "name": "Baby, You're a Rich Man",
+          "duration": "3:07"
+        },
+        {
+          "id": "11",
+          "name": "All You Need is Love",
+          "duration": "3:57"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name_Album": "Musica de Fondo: MTV Unplugged",
+      "name_Artist": "Zoé",
+      "duration": "59:00",
+      "year": 2011,
+      "image_artist": "https://www.tonica.la/__export/1587072837064/sites/debate/img/2020/04/16/the_beatles_documental_get_back.jpg_423682103.jpg",
+      "image": "https://elclavo.com/wp-content/uploads/2012/07/18-Dvd-Zoe-250x250.jpg",
+      "songs": [
+        {
+          "id": "1",
+          "name": "Sombras",
+          "duration": "4:13"
+        },
+        {
+          "id": "2",
+          "name": "Soñé",
+          "duration": "3:47"
+        },
+        {
+          "id": "3",
+          "name": "Últimos Días",
+          "duration": "3:53"
+        },
+        {
+          "id": "4",
+          "name": "No Me Destruyas",
+          "duration": "3:45"
+        },
+        {
+          "id": "5",
+          "name": "Labios Rotos",
+          "duration": "4:04"
+        },
+        {
+          "id": "6",
+          "name": "Dead",
+          "duration": "3:58"
+        },
+        {
+          "id": "7",
+          "name": "Veneno",
+          "duration": "4:15"
+        },
+        {
+          "id": "8",
+          "name": "Paula",
+          "duration": "4:13"
+        },
+        {
+          "id": "9",
+          "name": "Infinito",
+          "duration": "4:27"
+        },
+        {
+          "id": "10",
+          "name": "Vía Láctea",
+          "duration": "3:43"
+        },
+        {
+          "id": "11",
+          "name": "Poli/Love",
+          "duration": "4:16"
+        },
+        {
+          "id": "12",
+          "name": "Luna",
+          "duration": "4:41"
+        },
+        {
+          "id": "13",
+          "name": "Nada",
+          "duration": "4:45"
+        },
+        {
+          "id": "14",
+          "name": "Nunca",
+          "duration": "5:22"
+        },
+        {
+          "id": "15",
+          "name": "Bésame mucho",
+          "duration": "5:38"
+        }
+      ]
+    }
+  ]
+}

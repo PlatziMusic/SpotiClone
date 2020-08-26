@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server data.json --port 3001",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
-    "otro": "webpack"
+    "start": "webpack-dev-server --mode development --watch"
   },
   "keywords": [],
   "author": "Team's Crisly",
@@ -44,8 +44,8 @@
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   }
 }
