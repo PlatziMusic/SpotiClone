@@ -17,8 +17,9 @@
   }
   &-head a {
     color: $font-white-color;
+    text-decoration: none;
     &:hover {
-      color: $hover-color;
+      text-decoration: underline;
     }
   }
 }

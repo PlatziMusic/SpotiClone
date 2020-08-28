@@ -1,8 +1,9 @@
 @import "../Vars.scss";
 @import "../Mixins.scss";
 @import "../components/PlaylistHead.scss";
+@import "../components/UserHead.scss";
 @import "../components/Song.scss";
 
-.playlist {
+.playlist, .userHead {
   background: linear-gradient(0deg, $background-plataform, $background);
 }

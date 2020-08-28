@@ -6,6 +6,7 @@
   background-image: url('../../static/triangulo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .header-welcomePage {
   color: $font-white-color;
@@ -43,7 +44,9 @@
     color: white;
     text-align: center;
     text-shadow: 0 0 5px $font-white-color;
-    padding: 6em 0 0 5em;
+    padding-top: 6em;
+    width: 70%;
+    margin: auto;
   }
   &-title {
     font-size: 4em;
@@ -60,5 +63,75 @@
     font-weight: 600;
     width: 250px;
     text-shadow: 0 0 5px $font-white-color;
+  }
+}
+
+@media (max-width: 1024px){
+  .hero-welcomePage {
+    &-container {
+    padding-top: 5em;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .hero-welcomePage {
+    &-container {
+    padding-top: 3em;
+    }
+    &-title{
+      font-size: 3em;
+      margin: .3em 0 .3em 0;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .header-welcomePage-img{
+    width: 140px;
+  }
+  .header-welcomePage-navList-Link {
+    margin-right: 1em;
+    & a{
+      font-size: .8em;
+    }
+  }
+
+  .hero-welcomePage {
+    &-container {
+    padding-top: 3em;
+    }
+    &-title{
+      font-size: 2.5em;
+    }
+    &-subtitle{
+      font-size: 1.5em;
+    }
+    &-button{
+      padding: 15px;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .header-welcomePage-img{
+    width: 180px;
+  }
+  .header-welcomePage-navList {
+    display: none;
+  }
+  .header-welcomePage-img{
+    margin: auto;
+  }
+  .hero-welcomePage {
+    &-title{
+      font-size: 2.2em;
+    }
+    &-subtitle{
+      font-size: 1.3em;
+    }
+    &-button{
+      padding: 10px;
+    }
   }
 }

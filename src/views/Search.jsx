@@ -5,23 +5,20 @@ import '../assets/styles/components/Search.scss';
 const Search = ({ nameGender, imageGender }) => {
   return (
     <section className='search'>
-      <section className='searchHead'>
+      {/* <section className='searchHead'>
         <h2>Generos mas escuchados</h2>
         <div className='carrusel'>
           <Link to='/' className='cardCarrusel'>
-            {/* <h3>{nameGender}</h3> */}
             <img src={imageGender} alt={imageGender} />
           </Link>
           <Link to='/' className='cardCarrusel'>
-            {/* <h3>{nameGender}</h3> */}
             <img src={imageGender} alt={imageGender} />
           </Link>
           <Link to='/' className='cardCarrusel'>
-            {/* <h3>{nameGender}</h3> */}
             <img src={imageGender} alt={imageGender} />
           </Link>
         </div>
-      </section>
+      </section> */}
 
       <section className='searchGenders'>
         <h2>Explorar todo</h2>

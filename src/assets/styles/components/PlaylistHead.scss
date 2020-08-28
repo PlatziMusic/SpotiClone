@@ -118,7 +118,7 @@
 @media (max-width: 480px){
   .playlist-head {
     grid-template-columns: none;
-    height: auto;
+    height: 250px;
     &-image img{
       width: 50%;
     }
