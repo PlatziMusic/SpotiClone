@@ -7,11 +7,12 @@
   position: relative;
   &-container {
     overflow: overlay;
+    padding: 0 0.3em 0 0;
     &::-webkit-scrollbar {
       height: 0;
     }
   }
-  &-cards {  
+  &-cards {
     display: grid;
     grid-gap: 16px;
     grid-auto-flow: column;
@@ -22,36 +23,36 @@
   }
 }
 .card {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
   ::-webkit-scrollbar {
     height: 10px;
   }
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .carrusel {
-    &:first-child{
+    &:first-child {
       margin-top: 5em;
     }
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   ::-webkit-scrollbar {
     height: 8px;
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   ::-webkit-scrollbar {
     height: 5px;
   }
 }
 
-@media (max-width: 375px){
-  .carrusel-cards{
+@media (max-width: 375px) {
+  .carrusel-cards {
     width: 90%;
   }
 }

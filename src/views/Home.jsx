@@ -4,6 +4,8 @@ import { fetchAlbums } from '../redux';
 import Card from '../components/Cards/Card';
 import SectionCard from '../components/Cards/SectionCard';
 import '../assets/styles/components/Home.scss';
+import '../assets/styles/components/Carrusel.scss';
+
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -18,15 +20,17 @@ const Home = () => {
       (<h2>{albums.error}</h2>) :
       (
         <>
-          <section className='uno'>
-            <SectionCard titleContainer='Recomendaciones' />
-            <ul className='test'>
-              {
-                albums &&
-                albums.albums &&
-                albums.albums.map((album) => <Card key={album.id} id={album.id} image={album.image} title={album.name_Album} info={album.name_Artist} />)
-              }
-            </ul>
+          <section className='results-Container carrusel'>
+            <SectionCard titleContainer='Songs' />
+            <section className='results carrusel-container'>
+              <div className='resultsContainer carrusel-cards'>
+                {
+                  albums &&
+                  albums.albums &&
+                  albums.albums.map((album) => <Card key={album.id} id={album.id} image={album.image} title={album.name_Album} info={album.name_Artist} />)
+                }
+              </div>
+            </section>
           </section>
         </>
       );
