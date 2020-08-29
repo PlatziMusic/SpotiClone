@@ -14,6 +14,7 @@ import Results from '../views/Results';
 import Layout from '../components/Layout/Layout';
 import ViewUser from '../components/Profile/ViewUser';
 import Album from '../views/Album';
+// import Carrusel from '../views/Carrusel';
 
 const App = () => (
   <Provider store={store}>
@@ -31,6 +32,7 @@ const App = () => (
           <Route exact path='/playlist/:id' component={Playlist} />
           <Route exact path='/album' component={Album} />
           <Route exact path='/album/:id' component={Album} />
+          {/* <Route exact path='/carrusel' component={Carrusel} /> */}
         </Switch>
       </Layout>
     </BrowserRouter>

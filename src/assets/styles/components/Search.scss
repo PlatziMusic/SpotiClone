@@ -3,7 +3,7 @@
 
 
 .search {
-  margin: 5em 0;
+  margin: 4em 0;
   width: 100%;
   & h2 {
     margin: .5em 0;
@@ -11,38 +11,12 @@
   }
 }
 
-// .searchHead {
-//   margin: 0 20px;
-//   // width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   color: $font-white-color;
-//   & .carrusel {
-//     display: grid;
-//     // grid-template-columns: repeat(3,340px);
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: 150px;
-//     width: 100%;
-//     gap: 10px;
-//     & .cardCarrusel {
-//       background: $background;
-//       border: 1px solid $font-white-color;
-//       text-align: center;
-//       border-radius: 10px;
-//       max-width: 340px;
-//       min-width: 150px;
-//       height: 150px;
-//     }
-//   }
-// }
-
 .searchGenders {
   color: $font-white-color;
   margin: 0 10px;
   text-align: center;
   &-container {
     display: grid;
-    // grid-template-columns: repeat(6, 165px);
     grid-template-columns: repeat(auto-fit, 165px);
     grid-template-rows: 165px;
     gap: 10px;
@@ -59,7 +33,6 @@
 }
 
 @media (max-width: 768px){
-
   .search {
     & h2 {
       font-size: 1.8em;

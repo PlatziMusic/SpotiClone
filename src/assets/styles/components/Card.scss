@@ -7,7 +7,7 @@
 
 .containerCard {
   display: grid;
-  margin: 0px 20px;
+  margin: 0 15px -20px;
   &-head {
     display: flex;
     justify-content: space-between;
@@ -15,11 +15,6 @@
     align-items: center;
     color: $font-white-color;
   }
-  &-head a {
-    color: $font-white-color;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
+
+

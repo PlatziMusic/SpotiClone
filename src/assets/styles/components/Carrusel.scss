@@ -1,0 +1,57 @@
+@import "../Vars.scss";
+@import "../Mixins.scss";
+
+.carrusel {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  &-container {
+    overflow: overlay;
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+  &-cards {  
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: 2em 1em;
+    box-sizing: border-box;
+    overflow-y: overlay;
+    width: 95%;
+  }
+}
+.card {
+  margin-bottom: .5em;
+}
+
+@media (max-width: 1440px){
+  ::-webkit-scrollbar {
+    height: 10px;
+  }
+}
+@media (max-width: 1024px){
+  .carrusel {
+    &:first-child{
+      margin-top: 5em;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px){
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+}
+
+@media (max-width: 375px){
+  .carrusel-cards{
+    width: 90%;
+  }
+}

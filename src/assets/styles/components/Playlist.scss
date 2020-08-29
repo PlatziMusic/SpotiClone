@@ -2,8 +2,9 @@
 @import "../Mixins.scss";
 @import "../components/PlaylistHead.scss";
 @import "../components/UserHead.scss";
+@import "../components/Search.scss";
 @import "../components/Song.scss";
 
-.playlist, .userHead {
+.playlist, .userHead, .search {
   background: linear-gradient(0deg, $background-plataform, $background);
 }

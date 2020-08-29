@@ -105,6 +105,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .slidebar-container {
+    height: calc(100% - 0px);
+  }
+  
+}
 @media (max-width: 768px) {
   .slidebar-container {
     width: 10em;
