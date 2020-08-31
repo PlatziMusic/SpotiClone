@@ -1,5 +1,5 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .tracklist {
   width: 95%;
@@ -64,8 +64,8 @@
 }
 
 @media (max-width: 1024px) {
-  .song{
-    &-details{
+  .song {
+    &-details {
       &-titles {
         margin-left: 1em;
       }
@@ -77,8 +77,8 @@
 }
 
 @media (max-width: 768px) {
-  .song{
-    &-details{
+  .song {
+    &-details {
       &-titles {
         margin-left: 1.5em;
       }

@@ -1,9 +1,8 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
-
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .hero-fondo {
-  background-image: url('../../static/triangulo.jpg');
+  background-image: url("../../static/triangulo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,18 +26,18 @@
         & a {
           text-decoration: none;
           color: $font-white-color;
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
       }
     }
   }
-}  
+}
 
 .hero-welcomePage {
   width: 100%;
-  background: rgba(34, 31, 59, .8);
+  background: rgba(34, 31, 59, 0.8);
   height: 100vh;
   &-container {
     color: white;
@@ -50,7 +49,7 @@
   }
   &-title {
     font-size: 4em;
-    margin: .5em 0 .3em 0;
+    margin: 0.5em 0 0.3em 0;
   }
   &-subtitle {
     font-size: 2em;
@@ -66,71 +65,71 @@
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .hero-welcomePage {
     &-container {
-    padding-top: 5em;
+      padding-top: 5em;
     }
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .hero-welcomePage {
     &-container {
-    padding-top: 3em;
+      padding-top: 3em;
     }
-    &-title{
+    &-title {
       font-size: 3em;
-      margin: .3em 0 .3em 0;
+      margin: 0.3em 0 0.3em 0;
     }
   }
 }
 
-@media (max-width: 480px){
-  .header-welcomePage-img{
+@media (max-width: 480px) {
+  .header-welcomePage-img {
     width: 140px;
   }
   .header-welcomePage-navList-Link {
     margin-right: 1em;
-    & a{
-      font-size: .8em;
+    & a {
+      font-size: 0.8em;
     }
   }
 
   .hero-welcomePage {
     &-container {
-    padding-top: 3em;
+      padding-top: 3em;
     }
-    &-title{
+    &-title {
       font-size: 2.5em;
     }
-    &-subtitle{
+    &-subtitle {
       font-size: 1.5em;
     }
-    &-button{
+    &-button {
       padding: 15px;
     }
   }
 }
 
-@media (max-width: 375px){
-  .header-welcomePage-img{
+@media (max-width: 375px) {
+  .header-welcomePage-img {
     width: 180px;
   }
   .header-welcomePage-navList {
     display: none;
   }
-  .header-welcomePage-img{
+  .header-welcomePage-img {
     margin: auto;
   }
   .hero-welcomePage {
-    &-title{
+    &-title {
       font-size: 2.2em;
     }
-    &-subtitle{
+    &-subtitle {
       font-size: 1.3em;
     }
-    &-button{
+    &-button {
       padding: 10px;
     }
   }

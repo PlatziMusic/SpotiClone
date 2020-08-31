@@ -1,4 +1,4 @@
-@import "./Vars.scss";
+@import "./_Vars.scss";
 
 @mixin input-plataform {
   width: 80%;
@@ -34,7 +34,6 @@
     box-shadow: none;
   }
 }
-
 
 @mixin btn {
   padding: 10px 10px;

@@ -1,5 +1,5 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 // $margin: 0 1em;
 
@@ -20,8 +20,8 @@
 
 .slidebar-menu {
   &-option {
-    margin: .6em 0em;
-    padding: .1em .6em;
+    margin: 0.6em 0em;
+    padding: 0.1em 0.6em;
   }
   &-option:hover {
     background: $hover-color;
@@ -55,11 +55,11 @@
     cursor: pointer;
     outline: none;
     padding: 10px 15px;
-    transition: .2s;
+    transition: 0.2s;
     will-change: transform;
   }
   & button:active {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   & a {
     text-decoration: none;
@@ -71,7 +71,7 @@
   margin: 0 1em;
   color: $font-white-color;
   & h2 {
-    margin: .4em 0;
+    margin: 0.4em 0;
     font-size: 1.5em;
   }
   &-list {
@@ -79,7 +79,7 @@
     height: 250px;
   }
   & p {
-    margin: .3em 0;
+    margin: 0.3em 0;
     width: 90%;
     font-size: 1em;
   }
@@ -109,7 +109,6 @@
   .slidebar-container {
     height: calc(100% - 0px);
   }
-  
 }
 @media (max-width: 768px) {
   .slidebar-container {
@@ -117,24 +116,24 @@
     height: calc(100% - 10px);
   }
   .slidebar-menu {
-    margin: 0 .5em;
-    & p{
-      font-size: .9em;
+    margin: 0 0.5em;
+    & p {
+      font-size: 0.9em;
     }
   }
   .slidebar-newPlaylist {
-    &{
-      font-size:1em;
+    & {
+      font-size: 1em;
     }
   }
   .slidebar-yourPlaylist {
-    margin: 0 .6em;
+    margin: 0 0.6em;
     & h2 {
-      margin: .4em 0;
+      margin: 0.4em 0;
       font-size: 1.3em;
     }
-    & p{
-      font-size: .8em;
+    & p {
+      font-size: 0.8em;
     }
   }
 }

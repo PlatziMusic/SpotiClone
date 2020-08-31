@@ -1,12 +1,11 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
-
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .search {
   margin: 4em 0;
   width: 100%;
   & h2 {
-    margin: .5em 0;
+    margin: 0.5em 0;
     font-size: 2em;
   }
 }
@@ -21,7 +20,7 @@
     grid-template-rows: 165px;
     gap: 10px;
     place-content: center;
-    & .cardGenders{
+    & .cardGenders {
       width: 165px;
       height: 165px;
       background: $background;
@@ -32,18 +31,18 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .search {
     & h2 {
       font-size: 1.8em;
     }
   }
 
-  .searchGenders{
-    &-container{
+  .searchGenders {
+    &-container {
       grid-template-columns: repeat(auto-fit, 130px);
       grid-template-rows: 130px;
-      & .cardGenders{
+      & .cardGenders {
         width: 130px;
         height: 130px;
       }
@@ -51,18 +50,18 @@
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .search {
     & h2 {
       font-size: 1.5em;
     }
   }
 
-  .searchGenders{
-    &-container{
+  .searchGenders {
+    &-container {
       grid-template-columns: repeat(auto-fit, 90px);
       grid-template-rows: 90px;
-      & .cardGenders{
+      & .cardGenders {
         width: 90px;
         height: 90px;
       }

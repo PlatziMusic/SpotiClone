@@ -1,5 +1,5 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .playlist-head {
   width: 100%;
@@ -69,19 +69,19 @@
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .playlist-head {
     height: 220px;
-    &-details{
+    &-details {
       & h1 {
         font-size: 3em;
       }
       & h5 {
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
     &-datails .metadatos {
-      font-size: .9em;
+      font-size: 0.9em;
     }
   }
   .playlist-options {
@@ -89,23 +89,23 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .playlist-head {
     height: 180px;
-    &-details{
+    &-details {
       & h1 {
         font-size: 2.5em;
       }
       & h5 {
-        font-size: .8em;
+        font-size: 0.8em;
       }
       & .metadatos {
-        font-size: .5em 1em;
+        font-size: 0.5em 1em;
       }
     }
   }
   .playlist-options {
-    & .play{
+    & .play {
       width: 46px;
       height: 46px;
     }
@@ -115,37 +115,37 @@
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .playlist-head {
     grid-template-columns: none;
     height: 250px;
-    &-image img{
+    &-image img {
       width: 50%;
     }
     &-details {
       text-align: center;
-      & .metadatos{
+      & .metadatos {
         justify-content: center;
       }
     }
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
   .playlist-head {
     &-details {
       & h1 {
         font-size: 2em;
       }
       & .metadatos {
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
   }
-  .playlist-options{
+  .playlist-options {
     margin: 1em;
     justify-content: center;
-    & .play{
+    & .play {
       width: 36px;
       height: 36px;
     }

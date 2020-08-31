@@ -1,5 +1,5 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .card {
   @include Card;
@@ -16,5 +16,3 @@
     color: $font-white-color;
   }
 }
-
-

@@ -1,10 +1,12 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 @import "../components/PlaylistHead.scss";
 @import "../components/UserHead.scss";
 @import "../components/Search.scss";
 @import "../components/Song.scss";
 
-.playlist, .userHead, .search {
+.playlist,
+.userHead,
+.search {
   background: linear-gradient(0deg, $background-plataform, $background);
 }

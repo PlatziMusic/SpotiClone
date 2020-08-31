@@ -1,5 +1,5 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .playlist-userHead {
   width: 100%;
@@ -45,64 +45,64 @@
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .playlist-userHead {
     height: 220px;
-    &-details{
+    &-details {
       & h1 {
         font-size: 3em;
       }
       & h5 {
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
     &-datails .metadatos {
-      font-size: .9em;
+      font-size: 0.9em;
     }
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .playlist-userHead {
     height: 180px;
-    &-details{
+    &-details {
       & h1 {
         font-size: 2.5em;
       }
       & h5 {
-        font-size: .8em;
+        font-size: 0.8em;
       }
       & .metadatos {
-        font-size: .5em 1em;
+        font-size: 0.5em 1em;
       }
     }
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .playlist-userHead {
     grid-template-columns: none;
     height: 300px;
-    &-image img{
+    &-image img {
       width: 50%;
     }
     &-details {
       text-align: center;
-      & .metadatos{
+      & .metadatos {
         justify-content: center;
       }
     }
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
   .playlist-userHead {
     &-details {
       & h1 {
         font-size: 2em;
       }
       & .metadatos {
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
   }

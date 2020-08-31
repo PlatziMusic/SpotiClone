@@ -1,4 +1,16 @@
 {
+  "users": [
+    {
+      "email": "perez.luis.colunga@gmail.com",
+      "name": "Luis Alberto Colunga Perez",
+      "day": "25",
+      "month": "Mayo",
+      "year": "1997",
+      "gener": "male",
+      "password": "Kriboy21",
+      "id": 1
+    }
+  ],
   "albums": [
     {
       "id": 1,

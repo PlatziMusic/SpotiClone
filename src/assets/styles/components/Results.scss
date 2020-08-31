@@ -1,19 +1,19 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .containerCard {
-    display: grid;
-    margin: 0 15px -20px;
-    &-head{
-      color: $font-white-color;
-      & h1 {
-        margin: 0;
-        font-size: 1.5em;
-      }
+  display: grid;
+  margin: 0 15px -20px;
+  &-head {
+    color: $font-white-color;
+    & h1 {
+      margin: 0;
+      font-size: 1.5em;
     }
+  }
 }
 
-  //   & .resultsContainer {
+//   & .resultsContainer {
 //     display: grid;
 //     grid-gap: 16px;
 //     grid-auto-flow: column;
@@ -23,14 +23,13 @@
 //     width: 97%;
 //   }
 
-
-@media (max-width: 768px){
-  .results .resultsContainer{
+@media (max-width: 768px) {
+  .results .resultsContainer {
     width: 95%;
   }
 }
-@media (max-width: 480px){
-  .results .resultsContainer{
+@media (max-width: 480px) {
+  .results .resultsContainer {
     width: 93%;
   }
 }

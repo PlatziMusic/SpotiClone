@@ -1,93 +1,93 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .newPlaylist {
-	z-index: 3;
-	position: fixed;
+  z-index: 3;
+  position: fixed;
   overflow: auto;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: $font-white-color;
-	background-color: $background-secondary;
-	&-container {
-		width: 100%;
-		text-align: center;
-		& span {
-			font-size: 2em;
-		}
-		& h1 {
-			font-size: 3em;
-			margin: 1rem 0;
-			letter-spacing: 1.76px;
-			font-weight: 600;
-			text-shadow: 0 0 3px white;
-		}
-		& button {
-			background: transparent;
-			color: inherit;
-			outline: none;
-			border: none;
-			cursor: pointer;
-		}
-	}
-	& .inputBox {
-		background-color: $background;
-		height: 10em;
-		&-spacing {
-			color: $font-white-color;
-			height: 100%;
-			width: 50%;
-			margin: auto;
-			text-align: left;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			& h4 {
-				font-size: 14px;
-				margin: .5em 0;
-			}
-			& input {
-				height: 50%;
-				width: 100%;
-				font-size: 48px;
-				line-height: 56px;
-				letter-spacing: -.005em;
-				padding: 0;
-				text-transform: none;
-				box-sizing: border-box;
-				background-color: rgb(40, 40, 40);
-				color: #fff;
-				caret-color: $background-plataform;
-				background-color: transparent;
-				border: none;
-				outline: none;
-				&::placeholder{
-					color: white;
-				}
-			}
-		}
-	}
-	& .inputButtons {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		width: 25%;
-		margin: 2em auto;
-		& .left button{
-			@include btnNewPlaylist;
-			background-color: transparent;
-			border: 1px solid $font-gray-color;
-		}
-		& .right button{
-			@include btnNewPlaylist;
-			background-color: $background-plataform;
-		}
-	}
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-white-color;
+  background-color: $background-secondary;
+  &-container {
+    width: 100%;
+    text-align: center;
+    & span {
+      font-size: 2em;
+    }
+    & h1 {
+      font-size: 3em;
+      margin: 1rem 0;
+      letter-spacing: 1.76px;
+      font-weight: 600;
+      text-shadow: 0 0 3px white;
+    }
+    & button {
+      background: transparent;
+      color: inherit;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  & .inputBox {
+    background-color: $background;
+    height: 10em;
+    &-spacing {
+      color: $font-white-color;
+      height: 100%;
+      width: 50%;
+      margin: auto;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & h4 {
+        font-size: 14px;
+        margin: 0.5em 0;
+      }
+      & input {
+        height: 50%;
+        width: 100%;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.005em;
+        padding: 0;
+        text-transform: none;
+        box-sizing: border-box;
+        background-color: rgb(40, 40, 40);
+        color: #fff;
+        caret-color: $background-plataform;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+  }
+  & .inputButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    margin: 2em auto;
+    & .left button {
+      @include btnNewPlaylist;
+      background-color: transparent;
+      border: 1px solid $font-gray-color;
+    }
+    & .right button {
+      @include btnNewPlaylist;
+      background-color: $background-plataform;
+    }
+  }
 }

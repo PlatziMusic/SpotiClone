@@ -1,5 +1,5 @@
-@import "../Vars.scss";
-@import "../Mixins.scss";
+@import "../_Vars.scss";
+@import "../_Mixins.scss";
 
 .header {
   position: fixed;
@@ -52,10 +52,10 @@
 }
 
 @media (max-width: 767px) {
-.logo-home {
-  padding: 0;
-  & img {
-    width: 125px;
+  .logo-home {
+    padding: 0;
+    & img {
+      width: 125px;
+    }
   }
-}
 }
