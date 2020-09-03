@@ -16,3 +16,23 @@
     color: $font-white-color;
   }
 }
+
+@keyframes caja {
+  0% {
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-85px)
+  }
+  50%{
+    transform: translateX(0);
+  }
+  
+  75%{
+    transform: translateX(85px);
+  }
+  
+  100%{
+    transform: translateX(0);
+  }
+}

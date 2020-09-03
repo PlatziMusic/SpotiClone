@@ -21,7 +21,9 @@ const Card = ({ title, info, image, id }) => {
         </section>
         <section className='card__info'>
           <div className='card__info--data'>
-            <h2>{title}</h2>
+            <div class='card__info--data-Title'>
+              <h2>{title}</h2>
+            </div>
             <p>{info}</p>
           </div>
           <div className='card__info--btn'>

@@ -68,9 +68,9 @@
 .icon {
   color: $font-white-color;
   outline: none;
-  &-songPlay:hover {
-    color: $background-plataform;
-  }
+  // &-songPlay:hover {
+  //   color: $background-input;
+  // }
 }
 
 @media (max-width: 1024px) {
@@ -93,13 +93,16 @@
         margin-left: 1.5em;
       }
       &-more {
-        margin-right: 1.5em;
+        margin-right: 1.8em;
       }
     }
   }
 }
 
 @media (max-width: 375px) {
+  .tracklist{
+    margin: 0 4px;
+  }
   .song-duration {
     margin: 0 15px 5px 5px;
   }

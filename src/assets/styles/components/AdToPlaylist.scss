@@ -22,7 +22,7 @@
     }
     & h1 {
       font-size: 4em;
-      margin: 1em 0;
+      margin: .5em 0;
       letter-spacing: 1.76px;
     }
     & button {
@@ -50,11 +50,13 @@
 
 .cardPlaylist-container {
   display: grid;
-  grid-template-columns: repeat(7, 180px);
+  grid-template-columns: repeat(auto-fill, 220px);
   grid-template-rows: repeat(auto-fill, 240px);
   gap: 10px;
   text-align: center;
   place-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .cardPlaylist {
@@ -62,12 +64,25 @@
 }
 
 
-@media (max-width: 768){
+@media (max-width: 768px){
   .modal-container h1{
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .card-image-playlist {
     height: 150px;
+  }
+}
+
+@media (max-width: 480px){
+  .cardPlaylist{
+    width: 140px;
+  }
+  .modal-container h1{
+    font-size: 2em;
+  }
+  .cardPlaylist-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+    grid-template-rows: repeat(auto-fill, 240px);
   }
 }

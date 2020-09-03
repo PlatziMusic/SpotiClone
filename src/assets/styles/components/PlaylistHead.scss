@@ -60,11 +60,15 @@
     cursor: pointer;
     background-color: $background-plataform;
     color: $font-white-color;
+    &:hover{
+      transform: scale(1.2);
+    }
   }
   .icon {
     font-size: 40px;
     &-like:hover {
-      color: $background-plataform;
+      // color: $background-plataform;
+      transform: scale(1.2);
     }
   }
 }
