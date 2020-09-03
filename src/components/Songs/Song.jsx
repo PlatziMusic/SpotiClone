@@ -1,10 +1,8 @@
 import React from 'react';
 import '../../assets/styles/components/Song.scss';
 import { Link } from 'react-router-dom';
-// import './Icons';
-
+import SubMenu from '../Menu/SubMenu';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 const Song = ({ nameSong, nameArtist, duration }) => {
   return (
@@ -25,7 +23,7 @@ const Song = ({ nameSong, nameArtist, duration }) => {
           </div>
           <div className='song-details-more'>
             <button type='button'>
-              <MoreHorizIcon className='icon' style={{ fontSize: 40 }} />
+              <SubMenu />
             </button>
           </div>
         </div>

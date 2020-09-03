@@ -6,6 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import QueueMusicIcon from '@material-ui/icons/QueueMusic';
 
 import NewPlaylist from '../Modals/NewPlaylist';
+import AddToPlaylist from '../Modals/AddToPlaylist';
 // import logoSpoti from '../assets/static/logo.png';
 import '../../assets/styles/components/SlideBar.scss';
 

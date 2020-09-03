@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClearIcon from '@material-ui/icons/Clear';
+
 import '../../assets/styles/components/NewPlaylist.scss';
 
 const NewPlaylist = ({ onClose }) => {

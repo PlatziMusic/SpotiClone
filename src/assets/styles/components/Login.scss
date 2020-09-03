@@ -50,13 +50,9 @@
     width: 100%;
     & .checkbox {
       width: auto;
-      align-self: space-evenly;
       font-size: 12px;
       display: flex;
       align-items: center;
-      @media screen and (min-width: 280px) and (max-width: 768px) {
-        margin-left: -210px;
-      }
     }
     & .checkbox [type="checkbox"] {
       width: 20px;

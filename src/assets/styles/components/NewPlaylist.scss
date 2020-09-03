@@ -87,7 +87,64 @@
     }
     & .right button {
       @include btnNewPlaylist;
+      font-size: 13px;
+      padding: 8px 48px;
       background-color: $background-plataform;
     }
+  }
+}
+
+@media (max-width: 1024px){
+  .newPlaylist .inputButtons .left button{
+    margin-right: 10px;
+  }
+  .newPlaylist .inputButtons .right button{
+    margin-left: 10px;
+  }
+  .newPlaylist-container h1{
+    font-size: 2.8em;
+  }
+}
+@media (max-width: 768px){
+  .newPlaylist-container h1,
+  .newPlaylist .inputBox-spacing input{
+    font-size: 2.2em;
+  }
+  .newPlaylist .inputBox-spacing h4{
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px){
+  .newPlaylist .inputBox{
+    height: 8em;
+  }
+  .newPlaylist .inputBox-spacing h4{
+    font-size: .9em;
+  }
+  .newPlaylist .inputButtons .left button {
+    padding: 8px 20px;
+  }
+  .newPlaylist .inputButtons .right button {
+    padding: 8px 36px;
+  }
+}
+
+@media (max-width: 425px){
+  .newPlaylist-container h1{
+    font-size: 2em; 
+  }
+
+}
+
+@media (max-width: 375px){
+  .newPlaylist-container h1{
+    font-size: 1.5em;   
+  }
+  .newPlaylist .inputBox-spacing input{
+    font-size: 1.8em;
+  }
+  .newPlaylist .inputBox{
+    height: 7em;
   }
 }
