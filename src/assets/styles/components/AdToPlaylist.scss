@@ -76,13 +76,13 @@
 
 @media (max-width: 480px){
   .cardPlaylist{
-    width: 140px;
+    width: 130px;
   }
   .modal-container h1{
     font-size: 2em;
   }
   .cardPlaylist-container {
-    grid-template-columns: repeat(auto-fill, 140px);
+    grid-template-columns: repeat(auto-fill, 130px);
     grid-template-rows: repeat(auto-fill, 240px);
   }
 }

@@ -6,7 +6,7 @@
   color: white;
 }
 .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover{
-  background: rgba(5, 5, 5, 0.0)!important;
+  background: $background-secondary !important;
 }
 // .MuiMenu-list:hover{
 //   background: rgba(5, 5, 5, 0.7);

@@ -1,6 +1,7 @@
 import React from 'react';
 // import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 // import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import MenuProfile from '../Menu/MenuProfile';
 import logoSpoti from '../../assets/static/logo.png';
 import profile from '../../assets/static/profile.webp';
 import '../../assets/styles/components/Header.scss';
@@ -24,7 +25,8 @@ const Header = () => {
           src={profile}
           alt='Profile'
         />
-        <h2>Profile</h2>
+        <MenuProfile />
+        {/* <h2>Profile</h2> */}
       </div>
     </header>
   );

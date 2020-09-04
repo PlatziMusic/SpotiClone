@@ -4,9 +4,14 @@
 @import "../components/UserHead.scss";
 @import "../components/Search.scss";
 @import "../components/Song.scss";
+@import "../components/EditPerfil.scss";
+@import "../components/Perfil.scss";
 
 .playlist,
 .userHead,
+.artist,
+.EditPerfil,
+.Perfil,
 .search {
   background: linear-gradient(0deg, $background-plataform, $background);
 }

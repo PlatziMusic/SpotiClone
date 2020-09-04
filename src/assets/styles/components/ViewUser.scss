@@ -15,7 +15,7 @@
 .playlistCard-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
-  gap: 10px;
+  gap: 10px 15px;
   text-align: center;
   place-content: center;
   // margin-bottom: 4em;

@@ -11,7 +11,7 @@ const ViewUser = () => {
         caratula='https://junglamoderna.com/wp-content/uploads/2019/02/esta-persona-no-exist-297x300.jpg'
         type='Usuario'
         nameUser='Pedro Ramirez'
-        numberPlaylist='16 playlist'
+        metadatos='16 playlist'
       />
     </section>
   );

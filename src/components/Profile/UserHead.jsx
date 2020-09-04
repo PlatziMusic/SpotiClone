@@ -9,7 +9,7 @@ const UserHead = ({
   caratula,
   type,
   nameUser,
-  numberPlaylist,
+  metadatos,
 }) => {
   return (
     <section className='userHead'>
@@ -21,7 +21,7 @@ const UserHead = ({
           <h5>{type}</h5>
           <h1>{nameUser}</h1>
           <div className='metadatos'>
-            <p>{numberPlaylist}</p>
+            <p>{metadatos}</p>
           </div>
         </div>
       </div>

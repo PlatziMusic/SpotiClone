@@ -48,7 +48,7 @@ export default function LongMenu() {
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
             width: '200px',
-            background: 'rgba(5, 5, 5, 0.95)',
+            background: '#6f4a8e',
             color: '#fff',
           },
         }}

@@ -1,16 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/styles/components/Perfil.scss';
 
 const Perfil = () => {
   return (
-    <section>
-      <header className='playlistHeader'>
-        <img src='' alt='Logo' />
-        <button type='button' className='btn'>Regresar al reproductor</button>
-      </header>
-      <main className='playlistMain'>
+    <section className='Perfil'>
+      <section className='playlistMain'>
         <h1 className='playlistMain-title'>Vista general de la cuenta</h1>
-        <article className='playlistData'>
+        <div className='playlistData'>
           <h3>Perfil</h3>
           <table className='playlistData-table'>
             <tbody className='tbody'>
@@ -32,9 +29,9 @@ const Perfil = () => {
               </tr>
             </tbody>
           </table>
-        </article>
-        <button type='button' className='btn'>Editar perfil</button>
-      </main>
+        </div>
+        <Link className='btn-Perfil' to='/editprofile'>Editar perfil</Link>
+      </section>
     </section>
   );
 };

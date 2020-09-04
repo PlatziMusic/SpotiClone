@@ -15,6 +15,8 @@
   }
   &-image img {
     width: 100%;
+    max-width: 280px;
+    max-height: 280px;
   }
   &-details {
     margin: auto 1em;
@@ -44,7 +46,7 @@
 .playlist-options {
   color: $font-white-color;
   display: flex;
-  margin: 2em 1em;
+  margin: 0 1em;
   & button {
     @include btnPlaylist;
     margin: 0 10px;

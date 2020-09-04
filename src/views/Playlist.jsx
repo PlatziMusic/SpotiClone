@@ -6,9 +6,6 @@ import '../assets/styles/components/Playlist.scss';
 // import { Link } from 'react-router-dom';
 // import '../components/Icons';
 
-
-
-
 const Playlist = () => {
 
   return (
@@ -17,7 +14,6 @@ const Playlist = () => {
         caratula='https://i.scdn.co/image/ab67616d00001e0201e2ebfbf4f8147621c8a866'
         type='PLAYLIST'
         namePlaylist='Vampire Weekend'
-        imageArtist='https://i.scdn.co/image/5390ca6bd240b2a15b71868d1d105c3d6a7a7b17'
         linkArtist='Pedro Ramirez'
         duration='• 2008 • 34 min 18 seg'
       />

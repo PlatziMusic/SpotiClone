@@ -9,7 +9,7 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(registerUser(form, '/login'));
-  }
+  };
 
   return (
     <>
@@ -20,11 +20,11 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
       <form className='secondContainer__form' onSubmit={handleSubmit}>
         <h3>¿Cúal es tu fecha de nacimiento?</h3>
         <div className='form__birthday'>
-          <input 
-            type='text' 
-            name='day' 
-            id='day' 
-            placeholder='Día' 
+          <input
+            type='text'
+            name='day'
+            id='day'
+            placeholder='Día'
             onChange={handleChange}
           />
           <select name='month' id='month' onChange={handleChange}>
@@ -42,12 +42,12 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
             <option value='Noviembre'>Noviembre</option>
             <option value='Diciembre'>Diciembre</option>
           </select>
-          <input 
+          <input
             type='text'
             name='year'
             id='year'
             placeholder='Año'
-            onChange={handleChange} 
+            onChange={handleChange}
           />
         </div>
         <h3>¿Cúal es tu género?</h3>
@@ -66,8 +66,8 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
         <div
           className='radioButton'
         >
-          <input 
-            type='radio' 
+          <input
+            type='radio'
             name='gener'
             value='male'
             id='male'
@@ -78,8 +78,8 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
         <div
           className='radioButton'
         >
-          <input 
-            type='radio' 
+          <input
+            type='radio'
             name='gener'
             value='other'
             id='other'
@@ -102,8 +102,8 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
         </p>
         <button type='submit'>Unete</button>
       </form>
-      <button 
-        type='button' 
+      <button
+        type='button'
         className='complement-button'
         onClick={previusTo}
       >
