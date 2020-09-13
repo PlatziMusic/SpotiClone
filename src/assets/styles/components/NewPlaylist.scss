@@ -1,5 +1,5 @@
-@import "../_Vars.scss";
-@import "../_Mixins.scss";
+@import '../_Vars.scss';
+@import '../_Mixins.scss';
 
 .newPlaylist {
   z-index: 3;
@@ -16,6 +16,7 @@
   align-items: center;
   color: $font-white-color;
   background-color: $background-secondary;
+  overflow: hidden;
   &-container {
     width: 100%;
     text-align: center;
@@ -94,33 +95,33 @@
   }
 }
 
-@media (max-width: 1024px){
-  .newPlaylist .inputButtons .left button{
+@media (max-width: 1024px) {
+  .newPlaylist .inputButtons .left button {
     margin-right: 10px;
   }
-  .newPlaylist .inputButtons .right button{
+  .newPlaylist .inputButtons .right button {
     margin-left: 10px;
   }
-  .newPlaylist-container h1{
+  .newPlaylist-container h1 {
     font-size: 2.8em;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .newPlaylist-container h1,
-  .newPlaylist .inputBox-spacing input{
+  .newPlaylist .inputBox-spacing input {
     font-size: 2.2em;
   }
-  .newPlaylist .inputBox-spacing h4{
+  .newPlaylist .inputBox-spacing h4 {
     font-size: 1.1em;
   }
 }
 
-@media (max-width: 480px){
-  .newPlaylist .inputBox{
+@media (max-width: 480px) {
+  .newPlaylist .inputBox {
     height: 8em;
   }
-  .newPlaylist .inputBox-spacing h4{
-    font-size: .9em;
+  .newPlaylist .inputBox-spacing h4 {
+    font-size: 0.9em;
   }
   .newPlaylist .inputButtons .left button {
     padding: 8px 20px;
@@ -130,21 +131,20 @@
   }
 }
 
-@media (max-width: 425px){
-  .newPlaylist-container h1{
-    font-size: 2em; 
+@media (max-width: 425px) {
+  .newPlaylist-container h1 {
+    font-size: 2em;
   }
-
 }
 
-@media (max-width: 375px){
-  .newPlaylist-container h1{
-    font-size: 1.5em;   
+@media (max-width: 375px) {
+  .newPlaylist-container h1 {
+    font-size: 1.5em;
   }
-  .newPlaylist .inputBox-spacing input{
+  .newPlaylist .inputBox-spacing input {
     font-size: 1.8em;
   }
-  .newPlaylist .inputBox{
+  .newPlaylist .inputBox {
     height: 7em;
   }
 }

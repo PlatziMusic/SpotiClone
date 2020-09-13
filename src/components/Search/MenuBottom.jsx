@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
@@ -18,9 +18,24 @@ export default function SimpleBottomNavigation() {
       }}
       showLabels
     >
-      <BottomNavigationAction label='Inicio' icon={<HomeIcon />} />
-      <BottomNavigationAction label='Buscar' icon={<SearchIcon />} />
-      <BottomNavigationAction label='Tu biblioteca' icon={<QueueMusicIcon />} />
+      <BottomNavigationAction
+        label='Inicio'
+        icon={<HomeIcon />}
+        component={Link}
+        to='/'
+      />
+      <BottomNavigationAction
+        label='Buscar'
+        icon={<SearchIcon />}
+        component={Link}
+        to='/search'
+      />
+      <BottomNavigationAction
+        label='Tu biblioteca'
+        icon={<QueueMusicIcon />}
+        component={Link}
+        to='/user'
+      />
     </BottomNavigation>
   );
 }

@@ -5,13 +5,18 @@ import MenuProfile from '../Menu/MenuProfile';
 import logoSpoti from '../../assets/static/logo.png';
 import profile from '../../assets/static/profile.webp';
 import '../../assets/styles/components/Header.scss';
+import SearchBar from '../Search/SearchBar';
 
 const Header = () => {
   return (
     <header className='header'>
-      <div className='logo logo-home'>
-        <img src={logoSpoti} alt='Logotipo' />
+      <div className='header-lefth'>
+        <div className='logo logo-home'>
+          <img src={logoSpoti} alt='Logotipo' />
+        </div>
+        <SearchBar />
       </div>
+
       <div className='header__buttons'>
         {/* <button type='button' className='header__buttons--btn'>
           <NavigateBeforeIcon />
@@ -21,10 +26,7 @@ const Header = () => {
         </button> */}
       </div>
       <div className='header__profile'>
-        <img
-          src={profile}
-          alt='Profile'
-        />
+        <img src={profile} alt='Profile' />
         <MenuProfile />
         {/* <h2>Profile</h2> */}
       </div>

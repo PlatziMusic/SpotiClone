@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -18,11 +18,15 @@ export default function MenuProfile() {
 
   return (
     <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+      <Button
+        aria-controls='simple-menu'
+        aria-haspopup='true'
+        onClick={handleClick}
+      >
         Profile
       </Button>
       <Menu
-        id="simple-menu"
+        id='simple-menu'
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
@@ -34,9 +38,11 @@ export default function MenuProfile() {
           },
         }}
       >
-        <MenuItem component={Link} to='/profile' onClick={handleClose}>Mi cuenta</MenuItem>
+        <MenuItem component={Link} to='/profile' onClick={handleClose}>
+          Mi cuenta
+        </MenuItem>
         <MenuItem onClick={handleClose}>Cerrar Sesion</MenuItem>
       </Menu>
     </div>
   );
-};
+}

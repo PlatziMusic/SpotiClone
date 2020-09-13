@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React, {useRef} from 'react';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import '../../assets/styles/components/Card.scss';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-const Card = ({ title, info, image, id }) => {
+const Card = ({title, info, image, id}) => {
   const btn = useRef();
   return (
     <section
@@ -21,7 +21,7 @@ const Card = ({ title, info, image, id }) => {
         </section>
         <section className='card__info'>
           <div className='card__info--data'>
-            <div class='card__info--data-Title'>
+            <div className='card__info--data-Title'>
               <h2>{title}</h2>
             </div>
             <p>{info}</p>
@@ -36,7 +36,5 @@ const Card = ({ title, info, image, id }) => {
     </section>
   );
 };
-
-// ant design
 
 export default Card;
