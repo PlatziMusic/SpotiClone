@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import {Switch, Route, BrowserRouter} from 'react-router-dom';
+import {Provider} from 'react-redux';
 import store from '../redux/store';
 
 import Register from '../views/Register';
@@ -17,7 +17,6 @@ import Perfil from '../components/Profile/Perfil';
 import EditPerfil from '../components/Profile/EditPerfil';
 import Album from '../views/Album';
 import Artist from '../views/Artist';
-import prueba from '../views/prueba';
 
 const App = () => (
   <Provider store={store}>
@@ -38,7 +37,6 @@ const App = () => (
           <Route exact path='/album' component={Album} />
           <Route exact path='/album/:id' component={Album} />
           <Route exact path='/artist' component={Artist} />
-          <Route exact path='/p' component={prueba} />
         </Switch>
       </Layout>
     </BrowserRouter>
