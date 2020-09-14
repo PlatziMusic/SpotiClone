@@ -1,0 +1,67 @@
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+import { makeStyles } from '@material-ui/core/styles';
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+    '& > * + *': {
+      marginTop: theme.spacing(2),
+    },
+  },
+}));
+
+export default function Notification({ name, message }) {
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    open: false,
+    vertical: 'top',
+    horizontal: 'right',
+  });
+  
+
+  const { vertical, horizontal, open } = state;
+
+  React.useEffect(() => {
+    setState({
+      open: true,
+      vertical: 'top',
+      horizontal: 'right'
+    });
+  }, [message])
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setState({
+      ...state,
+      open: false
+    });
+  };
+
+  return (
+    <div className={classes.root}>
+      <Snackbar 
+        open={open} 
+        autoHideDuration={6000} 
+        onClose={handleClose} 
+        anchorOrigin={{ vertical, horizontal }}
+        key={vertical + horizontal}
+      >
+        <Alert onClose={handleClose} severity="error">
+          { name } &nbsp; { message }
+        </Alert>
+      </Snackbar>
+      {/* <Alert severity="error" open={open}>This is an error message!</Alert>
+      <Alert severity="warning">This is a warning message!</Alert>
+      <Alert severity="info">This is an information message!</Alert>
+      <Alert severity="success">This is a success message!</Alert> */}
+    </div>
+  );
+}
