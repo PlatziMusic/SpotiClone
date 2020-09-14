@@ -7,14 +7,23 @@ import profile from '../../assets/static/profile.webp';
 import '../../assets/styles/components/Header.scss';
 import SearchBar from '../Search/SearchBar';
 
-const Header = () => {
+const Header = ({ isSearch }) => {
+  console.log(isSearch);
+  // React.useEffect(() => {
+  //   effect
+  //   return () => {
+  //     cleanup
+  //   };
+  // }, [isSearch]);
   return (
     <header className='header'>
       <div className='header-lefth'>
         <div className='logo logo-home'>
           <img src={logoSpoti} alt='Logotipo' />
         </div>
-        <SearchBar />
+        {
+          isSearch ? <SearchBar /> : null
+        }
       </div>
 
       <div className='header__buttons'>
