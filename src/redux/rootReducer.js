@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import albumsReducer from './albums/albumsReducer';
-import registerReducer from "./register/registerReducer";
+import usersReducer from './users/userReducer';
 
 
 const rootReducer = combineReducers({
   albums: albumsReducer,
-  register: registerReducer,
+  users: usersReducer,
 });
 
 export default rootReducer;

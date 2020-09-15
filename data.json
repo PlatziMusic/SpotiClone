@@ -9,6 +9,48 @@
       "gener": "male",
       "password": "Kriboy21",
       "id": 1
+    },
+    {
+      "email": "krimittz@gmail.com",
+      "name": "Luis Alberto Colunga Perez",
+      "day": "25",
+      "month": "Mayo",
+      "year": "1997",
+      "gener": "male",
+      "password": "Kriboy21",
+      "id": 2
+    },
+    {
+      "first_name": "",
+      "last_name": "",
+      "username": "Esau maximino",
+      "email": "esau@gmail.com",
+      "birthdate": "",
+      "password": "Kriboy21",
+      "gener": "male",
+      "day": "12",
+      "month": "Junio",
+      "year": "1998",
+      "id": 3
+    },
+    {
+      "username": "Esau maximino",
+      "email": "esau1@gmail.com",
+      "gener": "male",
+      "day": "15",
+      "month": "Febrero",
+      "year": "2000",
+      "password": "esau123",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
     }
   ],
   "albums": [

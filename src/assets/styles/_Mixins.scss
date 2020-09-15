@@ -174,7 +174,7 @@
         animation-delay: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-        & h2{
+        & h2 {
           font-size: 16px;
         }
       }
@@ -197,7 +197,7 @@
           font-size: 40px;
           color: $font-white-color;
         }
-        &:hover{
+        &:hover {
           transform: scale(1.2);
         }
       }
@@ -217,7 +217,7 @@
     width: 100%;
     height: 60%;
     position: relative;
-    & .card-image-playlist{
+    & .card-image-playlist {
       width: 100%;
       height: 100%;
     }

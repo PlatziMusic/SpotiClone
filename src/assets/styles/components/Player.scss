@@ -8,34 +8,109 @@
   position: fixed;
   z-index: 1;
   bottom: 0;
-  color: $font-grey-color;
+  color: $font-white-color;
   display: grid;
-  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
   grid-template-areas: "info progress volume";
-  & .player__info {
+  &__info {
     grid-area: info;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 20px;
+    &--data {
+      display: flex;
+      align-items: center;
+      & img {
+        width: 60px;
+        margin: 0 20px 0 10px;
+      }
+      & .info {
+        overflow: hidden;
+        & .title {
+          width: 130px;
+          position: relative;
+          animation-name: title;
+          animation-duration: 10s;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          & h4 {
+            font-size: 15px;
+          }
+        }
+        & p {
+          font-size: 12px;
+        }
+      }
+    }
   }
-  & .player__progress {
+  &__progress {
     grid-area: progress;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  & .player__volume {
+  &__volume {
     grid-area: volume;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 30px;
+    padding-right: 20px;
+    width: calc(100% - 20px);
+    &--control {
+      width: 150px;
+      & .mute {
+        background-color: transparent;
+        color: $font-white-color;
+        border: none;
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
   .player {
     display: none;
+  }
+}
+
+.MuiSlider-root {
+  color: $background-plataform !important;
+}
+
+@keyframes title {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(22px);
+  }
+  20% {
+    transform: translateX(44px);
+  }
+  30% {
+    transform: translateX(66px);
+  }
+  40% {
+    transform: translateX(88px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  60% {
+    transform: translateX(88px);
+  }
+  70% {
+    transform: translateX(66px);
+  }
+  80% {
+    transform: translateX(44px);
+  }
+  90% {
+    transform: translateX(22px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

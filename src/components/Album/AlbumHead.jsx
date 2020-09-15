@@ -13,6 +13,7 @@ const AlbumHead = ({
   duration,
   year
 }) => {
+  const id = 1;
   return (
     <section>
       <div className='playlist-head'>
@@ -23,7 +24,7 @@ const AlbumHead = ({
           <h5>ALBUM</h5>
           <h1>{nameAlbum}</h1>
           <div className='metadatos'>
-            <Link to='/'>{linkArtist}</Link>
+            <Link to={`/artist/${id}`}>{linkArtist}</Link>
             <p>&nbsp; • {year} • {duration}</p>
           </div>
         </div>
