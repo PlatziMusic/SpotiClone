@@ -14,6 +14,7 @@ const AlbumHead = ({
   duration,
   year,
 }) => {
+  const id = 1;
   return (
     <section>
       <div className='playlist-head'>

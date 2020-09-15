@@ -1,7 +1,7 @@
-import { REGISTER_SUCCESS, REGISTER_FAILURE } from './userTypes';
+import { REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_SUCCESS, LOGIN_FAILURE } from './userTypes';
 
 const initialState = {
-  users: [],
+  user: {},
   error: '',
 };
 
@@ -10,13 +10,13 @@ const usersReducer = (state = initialState, action) => {
     case REGISTER_SUCCESS:
       return {
         ...state,
-        users: action.payload,
+        user: action.payload,
         error: '',
       };
     case REGISTER_FAILURE:
       return {
         ...state,
-        users: [],
+        user: {},
         error: action.payload,
       };
     default: return state;

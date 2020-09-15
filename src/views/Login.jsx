@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logoSpoti from '../assets/static/logo.png';
 import '../assets/styles/components/Login.scss';
+import { useDispatch } from 'react-redux';
+import { loginUser } from '../redux';
+
 
 const Login = () => {
+  const [form, setForm] = useState({
+    email: ''
+  })
+
+  const handleChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value
+    });
+  }
+  const dispatch = useDispatch();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    dispatch(loginUser(form, '/'));
+  }
+
+  console.log(form);
   return (
     <section className='Container'>
       <section className='Container-login'>
@@ -19,20 +40,20 @@ const Login = () => {
 
         <span className='division'>──────────── Ó ────────────</span>
 
-        <form className='Container-login__form'>
+        <form className='Container-login__form' onSubmit={handleSubmit}>
           <input
             type='email'
             name='email'
             id='email'
             placeholder='Correo electronico'
-          // onChange={handleChangeForm}
+            onChange={handleChange}
           />
           <input
             type='password'
             name='password'
             id='password'
             placeholder='Contraseña'
-          // onChange={handleChangeForm}
+            onChange={handleChange}
           />
           <div className='options firstContainer__form'>
             <div className='checkbox'>
@@ -43,7 +64,7 @@ const Login = () => {
               />
               <p>Recuerdame</p>
             </div>
-            <button type='button'>Iniciar Sesión</button>
+            <button type='submit'>Iniciar Sesión</button>
           </div>
         </form>
 

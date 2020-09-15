@@ -1,2 +1,3 @@
 export * from './albums/albumsActions';
-export * from './register/registerActions';
+export * from './users/userActions';
+export * from './artists/artistsActions';

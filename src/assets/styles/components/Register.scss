@@ -47,6 +47,11 @@
       color: $font-white-color;
     }
   }
+  & span {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+  }
   & button {
     @include btn-plataform;
     margin-top: 10px;

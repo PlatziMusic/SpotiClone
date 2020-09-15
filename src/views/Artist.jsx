@@ -1,10 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
+import {fetchArtist} from '../redux';
+import {useParams} from 'react-router-dom';
 import PlaylistHead from '../components/Playlist/PlaylistHead';
 import Song from '../components/Songs/Song';
 import Card from '../components/Cards/Card';
 import '../assets/styles/components/Card.scss';
 
 const Artist = () => {
+  const history = useParams().id;
+  const dispatch = useDispatch();
+  const artists = useSelector((state) => state.artists);
+
+  useEffect(() => {
+    dispatch(fetchArtist(history));
+  }, []);
+
+  console.log(artists);
   //{imageArtist, name, followers}
   return (
     <section className='artist'>

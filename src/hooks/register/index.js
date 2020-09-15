@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 
-
 export const useRegisterContainer = () => {
   const first = useRef();
   const second = useRef();
@@ -20,15 +19,15 @@ export const useRegisterContainer = () => {
 
 export const useStateRegister = () => {
   const [form, setForm] = useState({
+    username: '',
     email: '',
-    name: '',
-    day: 0,
+    gener: '',
+    day: '',
     month: '',
-    year: 0,
-    gener: ''
+    year: ''
   });
 
-  const handleChange = () => {
+  const handleChange = (event) => {
     setForm({
       ...form,
       [event.target.name]: event.target.value,

@@ -2,22 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { registerUser } from '../../redux';
+import { useForm } from 'react-hook-form';
+
 
 const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
+  const { register, errors, handleSubmit } = useForm();
   const dispatch = useDispatch();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const OnSubmit = (event) => {
     dispatch(registerUser(form, '/login'));
-  };
-
+  }
+  console.log(errors);
   return (
     <>
       <div className='logo'>
         <img src={logo} alt='Logo' />
         <h2>Ya casi</h2>
       </div>
-      <form className='secondContainer__form' onSubmit={handleSubmit}>
+      <form className='secondContainer__form' onSubmit={handleSubmit(OnSubmit)}>
         <h3>¿Cúal es tu fecha de nacimiento?</h3>
         <div className='form__birthday'>
           <input
@@ -26,8 +28,30 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
             id='day'
             placeholder='Día'
             onChange={handleChange}
+            ref={register({
+              required: {
+                value: true,
+                message: 'Campo faltante'
+              },
+              min: {
+                value: 1,
+                message: 'Dia minimo 1'
+              },
+              max: {
+                value: 31,
+                message: 'Dia maximo es 31'
+              }
+            })}
           />
-          <select name='month' id='month' onChange={handleChange}>
+          <select 
+            name='month' 
+            id='month'
+            ref={register({ 
+              required: {value: true,
+              message: 'Campo faltante'}
+            })}  
+            onChange={handleChange}
+          >
             <option value='none'>Mes</option>
             <option value='Enero'>Enero</option>
             <option value='Febrero'>Febrero</option>
@@ -48,6 +72,20 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
             id='year'
             placeholder='Año'
             onChange={handleChange}
+            ref={register({
+              required: {
+                value: true,
+                message: 'Campo faltante'
+              },
+              min: {
+                value: 1950,
+                message: 'Año minimo 1950'
+              },
+              max: {
+                value: 2002,
+                message: 'Año maximo es 2002'
+              }
+            })}
           />
         </div>
         <h3>¿Cúal es tu género?</h3>
@@ -60,6 +98,7 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
             id='female'
             value='famale'
             onChange={handleChange}
+            ref={register({ required: true })}
           />
           <label htmlFor='female'>Mujer</label>
         </div>
@@ -72,6 +111,7 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
             value='male'
             id='male'
             onChange={handleChange}
+            ref={register({ required: true })} 
           />
           <label htmlFor='male'>Hombre</label>
         </div>
@@ -84,6 +124,7 @@ const SecondContainer = ({ logo, handleChange, previusTo, form }) => {
             value='other'
             id='other'
             onChange={handleChange}
+            ref={register({ required: true })} 
           />
           <label htmlFor='other'>Otro</label>
         </div>

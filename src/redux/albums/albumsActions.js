@@ -32,9 +32,9 @@ const fetchGetAlbum = (album) => {
 export const fetchAlbums = () => {
   return (dispatch) => {
     dispatch(fetchAlbumsRequest());
-    axios.get(`${URL}/albums`)
+    axios.get(`${URL}/albums/`)
       .then((response) => dispatch(fetchAlbumsSuccess(response.data)))
-      .catch((error) => dispatch(fetchAlbumsFailure(error.message)));
+      .catch((error) => dispatch(fetchAlbumsFailure(error.message)))
   };
 };
 
