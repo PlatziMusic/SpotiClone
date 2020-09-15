@@ -44,7 +44,6 @@ export const registerUser = (payload, redirectUrl) => {
 
 export const loginUser = ({ email, password }, redirectUrl) => {
   return (dispatch) => {
-    console.log(email, password);
     axios({
       url: `https://reqres.in/api/login`,
       method: 'post',
