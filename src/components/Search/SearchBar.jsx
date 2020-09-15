@@ -1,14 +1,6 @@
 import React from 'react';
 import '../../assets/styles/components/Header.scss';
 
-// const SearchBar = () => {
-//   return (
-//     <div className='searchBar'>
-//       <input type='searchBar-input' name='search' id='Seacrh' />
-//     </div>
-//   );
-// };
-
 const people = [
   // 'Siri',
   // 'Alexa',

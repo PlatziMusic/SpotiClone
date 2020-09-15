@@ -7,7 +7,7 @@ import profile from '../../assets/static/profile.webp';
 import '../../assets/styles/components/Header.scss';
 import SearchBar from '../Search/SearchBar';
 
-const Header = ({ isSearch }) => {
+const Header = ({isSearch}) => {
   console.log(isSearch);
   // React.useEffect(() => {
   //   effect
@@ -21,9 +21,7 @@ const Header = ({ isSearch }) => {
         <div className='logo logo-home'>
           <img src={logoSpoti} alt='Logotipo' />
         </div>
-        {
-          isSearch ? <SearchBar /> : null
-        }
+        {isSearch ? <SearchBar /> : null}
       </div>
 
       <div className='header__buttons'>
@@ -37,7 +35,6 @@ const Header = ({ isSearch }) => {
       <div className='header__profile'>
         <img src={profile} alt='Profile' />
         <MenuProfile />
-        {/* <h2>Profile</h2> */}
       </div>
     </header>
   );

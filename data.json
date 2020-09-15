@@ -364,5 +364,12 @@
     }
   ],
   "playlist": [],
-  "artists": []
+  "artists": [
+    {
+      "idArtist": "AmyWinehouse",
+      "name": "Amy Winehouse",
+      "followers": "9.092.574 oyentes mensuales",
+      "imageArtist": "https://assets.tonica.la/__export/1536951628423/sites/debate/img/2018/09/14/amywinehouse2207r_1.jpg_1359985831.jpg"
+    }
+  ]
 }

@@ -5,14 +5,22 @@ import Card from '../components/Cards/Card';
 import '../assets/styles/components/Card.scss';
 
 const Artist = () => {
+  //{imageArtist, name, followers}
   return (
     <section className='artist'>
-      <PlaylistHead
-        caratula='https://i.scdn.co/image/85c6b87d4fa4a2196bf420ddbfa3f7660a33feb1'
+      {/* <PlaylistHead
+        caratula={imageArtist}
         type='Artist'
         metadatos=''
-        namePlaylist='Mon Laferte'
-        duration='4.127.998 oyentes mensuales'
+        namePlaylist={name}
+        duration={followers}
+      /> */}
+      <PlaylistHead
+        caratula='https://i.scdn.co/image/85c6b87d4fa4a2196bf420ddbfa3f7660a33feb1' //{image}
+        type='Artist'
+        metadatos=''
+        namePlaylist='Mon Laferte' //{name}
+        duration='4.127.998 oyentes mensuales' // {followers}
       />
 
       <h2 className='sectionArtist-head'>Populares</h2>
@@ -22,12 +30,12 @@ const Artist = () => {
           nameArtist='Mon Laferte'
           duration='4:38'
         />
+        <Song nameSong='Amárrame' nameArtist='Mon Laferte' duration='3:27' />
         <Song
-          nameSong='Amárrame'
+          nameSong='Mi Buen Amor'
           nameArtist='Mon Laferte'
-          duration='3:27'
+          duration='3:47'
         />
-        <Song nameSong='Mi Buen Amor' nameArtist='Mon Laferte' duration='3:47' />
         <Song
           nameSong='Amor Completo'
           nameArtist='Mon Laferte'

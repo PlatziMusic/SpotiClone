@@ -83,12 +83,41 @@
   background: $background-secondary !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .logo-home {
     padding: 0;
     & img {
       width: 125px;
     }
+  }
+  .searchBar {
+    & input {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .searchBar {
+    margin-left: 30px;
+    & input {
+      width: 125px;
+    }
+  }
+  // .header .header__profile, .logo-home {
+  //   display: none;
+  // }
+}
+
+@media (max-width: 425px) {
+  .searchBar {
+    margin-left: 20px;
+    & input {
+      width: 100px;
+    }
+  }
+  .header .header__profile {
+    margin: 0;
   }
 }
 

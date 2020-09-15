@@ -1,17 +1,18 @@
 import React from 'react';
 import '../../assets/styles/components/AlbumHead.scss';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 const AlbumHead = ({
+  idArtist,
   caratula,
   nameAlbum,
-  linkArtist,
+  nameArtist,
   duration,
-  year
+  year,
 }) => {
   return (
     <section>
@@ -23,8 +24,11 @@ const AlbumHead = ({
           <h5>ALBUM</h5>
           <h1>{nameAlbum}</h1>
           <div className='metadatos'>
-            <Link to='/'>{linkArtist}</Link>
-            <p>&nbsp; • {year} • {duration}</p>
+            <Link to={`/artist/${idArtist}`}>{nameArtist}</Link>
+            {/* <Link to={`/artist/${idArtist}/`}>{nameArtist}</Link> */}
+            <p>
+              &nbsp; • {year} • {duration}
+            </p>
           </div>
         </div>
       </div>
