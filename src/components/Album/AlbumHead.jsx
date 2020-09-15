@@ -25,7 +25,7 @@ const AlbumHead = ({
           <h5>ALBUM</h5>
           <h1>{nameAlbum}</h1>
           <div className='metadatos'>
-            <Link to={`/artist/${idArtist}`}>{nameArtist}</Link>
+            <Link to={`/artist/AmyWinehouse`}>{nameArtist}</Link>
             {/* <Link to={`/artist/${idArtist}/`}>{nameArtist}</Link> */}
             <p>
               &nbsp; • {year} • {duration}

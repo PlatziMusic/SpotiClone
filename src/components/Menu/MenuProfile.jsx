@@ -14,6 +14,8 @@ export default function MenuProfile() {
 
   const handleClose = () => {
     setAnchorEl(null);
+    localStorage.removeItem('token');
+    window.location.href = '/home';
   };
 
   return (

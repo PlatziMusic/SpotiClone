@@ -16,24 +16,23 @@ const Artist = () => {
     dispatch(fetchArtist(history));
   }, []);
 
-  console.log(artists);
-  //{imageArtist, name, followers}
+  const { imageArtist, name, followers } = artists.artist;
   return (
     <section className='artist'>
-      {/* <PlaylistHead
+      <PlaylistHead
         caratula={imageArtist}
         type='Artist'
         metadatos=''
         namePlaylist={name}
         duration={followers}
-      /> */}
-      <PlaylistHead
-        caratula='https://i.scdn.co/image/85c6b87d4fa4a2196bf420ddbfa3f7660a33feb1' //{image}
+      />
+      {/* <PlaylistHead
+        caratula={artists.imageArtist} //{image}
         type='Artist'
         metadatos=''
         namePlaylist='Mon Laferte' //{name}
         duration='4.127.998 oyentes mensuales' // {followers}
-      />
+      /> */}
 
       <h2 className='sectionArtist-head'>Populares</h2>
       <section className='songs'>

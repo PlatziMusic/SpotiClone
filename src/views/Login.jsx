@@ -23,8 +23,6 @@ const Login = () => {
     event.preventDefault();
     dispatch(loginUser(form, '/'));
   }
-
-  console.log(form);
   return (
     <section className='Container'>
       <section className='Container-login'>
