@@ -1,4 +1,4 @@
-@import "../_Vars.scss";
+@import '../_Vars.scss';
 
 .player {
   min-width: 320px;
@@ -11,7 +11,7 @@
   color: $font-white-color;
   display: grid;
   grid-template-columns: repeat(3, minmax(160px, 1fr));
-  grid-template-areas: "info progress volume";
+  grid-template-areas: 'info progress volume';
   &__info {
     grid-area: info;
     display: flex;
@@ -50,6 +50,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: $font-white-color;
+    & .player__action {
+      &-button {
+        width: 2em;
+        font-size: 2.3em;
+      }
+    }
+    & .container__progress {
+      width: 100%;
+      & .MuiLinearProgress-barColorPrimary {
+        background-color: #6f4a8e;
+      }
+      & .MuiTypography-colorTextSecondary {
+        color: $font-white-color;
+      }
+    }
   }
   &__volume {
     grid-area: volume;

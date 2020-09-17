@@ -121,7 +121,25 @@
   }
 }
 
+@media (max-width: 375px) {
+  .searchBar {
+    margin-left: 20px;
+    & input {
+      width: 165px;
+    }
+  }
+  .header .header__profile {
+    margin: 0;
+  }
+}
+
 @media (max-width: 320px) {
+  .searchBar {
+    margin-left: 20px;
+    & input {
+      width: 100px;
+    }
+  }
   .logo-home {
     & img {
       margin-left: 15px;
